@@ -1,0 +1,18 @@
+---
+layout: "base.njk"
+---
+
+<section>
+  <h3>Hi! I'm {{ name }}</h3>
+  <img src="{{ image }}" alt="author image">
+  {{ content | safe }}
+</section>
+<section>
+  <h3>My recent content</h3>
+  <div>
+    {% set posts = collections.posts | filterByAuthor(name) %}
+    {% for post in posts | reverse %}
+      {% include "poem_snippet.njk" %}
+    {% endfor %}
+  </div>
+</section>

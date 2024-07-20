@@ -1,0 +1,27 @@
+---
+title: A day
+image: "https://picsum.photos/150"
+imageAlt: cover image
+date: "2024-07-21"
+author: Emily Dickinson
+---
+
+I’ll tell you how the sun rose, —
+A ribbon at a time.
+The steeples swam in amethyst,
+The news like squirrels ran.
+
+The hills untied their bonnets,
+The bobolinks begun.
+Then I said softly to myself,
+“That must have been the sun!”
+
+But how he set, I know not.
+There seemed a purple stile
+Which little yellow boys and girls
+Were climbing all the while
+
+Till when they reached the other side,
+A dominie in gray
+Put gently up the evening bars,
+And led the flock away.

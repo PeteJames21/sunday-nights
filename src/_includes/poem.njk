@@ -1,0 +1,12 @@
+---
+layout: base.njk
+---
+
+<section>
+  <h1>{{ title }}</h1>
+  <img src="{{ image }}" alt="poem cover image">
+  <p>
+    by {{ author }} on {{ date }}
+  </p>
+  <article>{{ content | safe}}</article>
+</section>

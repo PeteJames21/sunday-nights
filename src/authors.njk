@@ -1,0 +1,12 @@
+---
+layout: "base.njk"
+---
+<h1>
+  Explore Authors
+</h1>
+<div>
+  {% for author in collections.authors %}
+    {% include "author_snippet.njk" %}
+    <br>
+  {% endfor %}
+</div>

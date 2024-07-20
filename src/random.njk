@@ -1,0 +1,13 @@
+---
+layout: "base.njk"
+---
+
+<h1>
+  Explore random poems:
+</h1>
+<div>
+  {% for post in collections.posts %}
+    {% include "poem_snippet.njk" %}
+    <br>
+  {% endfor %}
+</div>

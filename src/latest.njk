@@ -1,0 +1,13 @@
+---
+layout: "base.njk"
+---
+
+<h1>
+  Explore the latest poems:
+</h1>
+<div>
+  {% for post in collections.posts | reverse %}
+    {% include "poem_snippet.njk" %}
+    <br>
+  {% endfor %}
+</div>
