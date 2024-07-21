@@ -6,7 +6,7 @@ layout: "base.njk"
   Explore random poems:
 </h1>
 <div>
-  {% for post in collections.posts %}
+  {% for post in collections.post %}
     {% include "poem_snippet.njk" %}
     <br>
   {% endfor %}

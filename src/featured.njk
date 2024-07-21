@@ -6,7 +6,7 @@ layout: "base.njk"
   Explore featured poems:
 </h1>
 <div>
-  {% for post in collections.posts | reverse %}
+  {% for post in collections.post | reverse %}
     {% include "poem_snippet.njk" %}
     <br>
   {% endfor %}

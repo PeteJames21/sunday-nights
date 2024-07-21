@@ -1,4 +1,4 @@
 {
   "layout": "poem.njk",
-  "tags": "posts"
+  "tags": "post"
 }
