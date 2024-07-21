@@ -1,14 +1,37 @@
 ---
-title: Home
+title: "Sunday Nights —  Home"
 layout: "base.njk"
+
+pagination:
+  data: collections.post
+  size: 2
+  alias: posts
+  reverse: true
+permalink: "{% if pagination.pageNumber > 0 %}index/page-{{ pagination.pageNumber + 1 }}/{% endif %}index.html"
 ---
 
 <h1>
-  Explore all poems:
+  Explore the latest poems:
 </h1>
+{% if posts.length == 0 %}
+  <div class="empty-results">
+    <p>Oops! No content found</p>
+  </div>
+{% endif %}
+
 <div>
-  {% for post in collections.post %}
+  {% for post in posts %}
     {% include "poem_snippet.njk" %}
     <br>
   {% endfor %}
 </div>
+
+<nav class="pagination">
+  {% if pagination.href.previous %}
+    <a href="{{pagination.href.previous}}">Previous</a>
+  {% endif %}
+
+  {% if pagination.href.next %}
+    <a href="{{pagination.href.next}}">Next</a>
+  {% endif %}
+</nav>
