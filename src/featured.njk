@@ -1,4 +1,5 @@
 ---
+title: "Featured Poems — Sunday Nights"
 layout: "base.njk"
 ---
 
@@ -6,7 +7,7 @@ layout: "base.njk"
   Explore featured poems:
 </h3>
 <div>
-  {% for post in collections.posts | reverse %}
+  {% for post in collections.post | reverse %}
     {% include "poem_snippet.njk" %}
     <br>
   {% endfor %}
