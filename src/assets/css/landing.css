@@ -1,0 +1,13 @@
+
+
+.page-titles {
+  color: #d30a0a;
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5em;
+  text-align: center;
+  margin: 20px 0;
+  line-height: 1.2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  letter-spacing: 1px;
+  font-weight: bold;
+}
