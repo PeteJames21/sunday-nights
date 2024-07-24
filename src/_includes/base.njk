@@ -9,14 +9,18 @@
       <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="/assets/css/base.css">
       <link rel="stylesheet" href="/assets/css/landing.css">
+      <link rel="stylesheet" href="/assets/css/poem.css">
       <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
 
   </head>
   <body>
     {% include "header.njk" %}
     <main>
       {{ content | safe }}
-      {% include "footer.njk" %}
+
     </main>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -31,4 +35,5 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"></script>
   </body>
+  {% include "footer.njk" %}
 </html>

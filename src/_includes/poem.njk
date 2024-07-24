@@ -2,11 +2,11 @@
 layout: base.njk
 ---
 
-<section>
-  <h1>{{ title }}</h1>
-  <img src="{{ image }}" alt="poem cover image">
-  <p>
+<section class="poem-section">
+  <img class="poem-image" src="{{ image }}" alt="poem cover image">
+  <h1 class="poem-title">{{ title }}</h1>
+  <p class="poem-data">
     by {{ author }} on {{ date }}
   </p>
-  <article>{{ content | safe}}</article>
+  <article class="poem-text">{{ content | safe}}</article>
 </section>

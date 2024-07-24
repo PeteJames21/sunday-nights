@@ -1,0 +1,67 @@
+.poem-section{
+  /* background-color: aqua; */
+  background-color: #ffffffe5;
+}
+
+.poem-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  display: none;
+
+}
+.poem-title {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 25px;
+  text-align: center;
+  color: #1a1a1a;
+  margin: 20px 0px 10px; /* Space below the title */
+  /* font-weight: 700; */
+}
+
+.poem-data{
+  font-family: Merriweather, Georgia, serif;
+  font-size: 17px;
+  font-style: italic;
+}
+
+.poem-text {
+
+  font-family: Merriweather, Georgia, serif;
+  font-size: 17px;
+  line-height: 33px;
+  text-align: left;
+  letter-spacing: normal;
+  color: #1a1a1a;
+}
+
+/* FOR LAPTOPS */
+@media (min-width: 1024px) {
+  .poem-text {
+    margin-left: 150px;
+  }
+  .poem-data{
+    margin-left: 150px;
+  }
+  .poem-title {
+    font-family: "DM Serif Display", serif;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: normal;
+    color: #1a1a1a;
+    margin: 30px 0px 15px; /* Space below the title */
+    /* font-weight: 700; */
+  }
+}
+
+/* FOR PHONES */
+.poem-section{
+  padding-left: 25px;
+  padding-right: 5px;
+  background-color: #ffffffe5;
+}
