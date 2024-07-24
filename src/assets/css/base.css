@@ -25,6 +25,7 @@ main {
   flex-direction: column;
   height: calc(100vh - var(--header-height));
   overflow: auto;
+  margin: 0 25px;
 
 
 }
@@ -37,12 +38,16 @@ header {
   padding: 10px 20px;
  /*  background: linear-gradient(68.6deg, rgb(252, 165, 241) 1.8%, rgb(181, 255, 255) 100.5%);
   background: linear-gradient(68.6deg, #d4b084 1.8%, #f2e0c9 100.5%);*/
-  background: linear-gradient(68.6deg, #e3d3c3 1.8%, white 100.5%);
-  background: linear-gradient(68.6deg, #d4b8a4 1.8%, #f7f2ed 100.5%);
-
+  /* background: linear-gradient(68.6deg, #e3d3c3 1.8%, white 100.5%);
+  background: linear-gradient(68.6deg, #d4b8a4 1.8%, #f7f2ed 100.5%); */
+  /* background: linear-gradient(135deg, #7fa0ff, #aabfff); */
+  background: linear-gradient(135deg, #7fa0ff, #b0caff);
+  background: linear-gradient(180deg, #e0f0ff, #ffffff); /* Light blue fading to white */
+  border-bottom: 1.5px solid #7fa0ff;
   color: #000;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
+  color: #0066cc;
 }
 
 nav {
@@ -88,14 +93,13 @@ nav {
 }
 
 .page-titles {
-  color: #d30a0a;
+  color: #d44620;
+  color: #0066cc;
   font-family: 'Dancing Script', cursive;
-  font-size: 1 em;
+  font-size: 0.8 em;
   text-align: center;
   margin: 5px 0;
-
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-
   font-weight: bold;
 }
 
@@ -153,7 +157,7 @@ footer {
   .page-titles {
     font-size: 2.5em;
     text-align: center;
-    margin: 20px 0;
+    margin: 10px 0;
     line-height: 1.2;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     letter-spacing: 1px;
