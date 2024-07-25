@@ -1,7 +1,18 @@
+/*
+------------------------
+CSS RESETS
+------------------------
+*/
+
 * {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /*
@@ -144,19 +155,20 @@ footer {
   margin-top: auto;
 }
 
-/* Media query for laptops and larger screens */
-@media (min-width: 1024px) {
-  main {
-    max-width: 70%;
-    margin: 0 auto;
-  }
-  .page-titles {
-    font-size: 2.5em;
-    text-align: center;
-    margin: 10px 0;
-    line-height: 1.2;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    letter-spacing: 1px;
-    font-weight: bold;
-  }
+a.pagination-link.active {
+  background-color: orange;
 }
+
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  width: 75%;
+  height: fit-content;
+  gap: 10px;
+}
+
+a.pagination-link {
+  padding: 0px 5px 0px 5px;
+  background-color: #eeeeee;
+}
+

@@ -22,10 +22,20 @@ permalink: "{% if pagination.pageNumber > 0 %}index/page-{{ pagination.pageNumbe
 
 <nav class="pagination">
   {% if pagination.href.previous %}
-    <a href="{{pagination.href.previous}}">Previous</a>
+    <a class="pagination-link" href="{{pagination.href.previous}}">Previous</a>
   {% endif %}
 
+  {% set x = 1 %}
+  {%- for link in pagination.hrefs %}
+    {% if pagination.pageNumber == x - 1%}
+      <a class="active pagination-link" href="#">{{ x }}</a>
+    {% else %}
+      <a class="pagination-link" href={{ link }}>{{ x }}</a>
+    {% endif %}
+    {% set x = x + 1 %}
+  {% endfor -%}
+
   {% if pagination.href.next %}
-    <a href="{{pagination.href.next}}">Next</a>
+    <a class="pagination-link" href="{{pagination.href.next}}">Next</a>
   {% endif %}
 </nav>
