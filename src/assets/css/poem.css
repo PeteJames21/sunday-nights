@@ -49,12 +49,12 @@
   .poem-title {
     font-family: "DM Serif Display", serif;
     font-weight: 500;
-    font-size: 40px;
+    font-size: 35px;
     line-height: 30px;
     text-align: center;
     letter-spacing: normal;
     color: #1a1a1a;
-    margin: 30px 0px 15px; /* Space below the title */
+    margin: 30px 0px 20px; /* Space below the title */
     /* font-weight: 700; */
   }
 }

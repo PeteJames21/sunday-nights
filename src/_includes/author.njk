@@ -2,10 +2,10 @@
 layout: "base.njk"
 ---
 
-<section>
-  <h3>Hi! I'm {{ name }}</h3>
-  <img src="{{ image }}" alt="author image">
-  {{ content | safe }}
+<section class="author-section">
+  <h3 class="author-title">Hi! I'm {{ name }}</h3>
+  <img class="author-image" src="{{ image }}" alt="author image">
+  <div class="author-content">{{ content | safe }}</div>
 </section>
 <section>
   <h3>My recent content</h3>

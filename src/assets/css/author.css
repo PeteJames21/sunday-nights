@@ -1,0 +1,18 @@
+.author-title {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 25px;
+  text-align: center;
+  color: #1a1a1a;
+  margin: 20px 0px 10px; /* Space below the title */
+  /* font-weight: 700; */
+}
+
+.author-content {
+  font-family: Merriweather, Georgia, serif;
+  font-size: 17px;
+  line-height: 28px;
+  text-align: left;
+  color: #1a1a1a;
+}
