@@ -26,7 +26,7 @@
 
 .poem-data{
   font-family: Merriweather, Georgia, serif;
-  font-size: 17px;
+  font-size: 15px;
   font-style: italic;
 }
 
@@ -46,12 +46,7 @@
     max-width: 50%;
     background-color: #ffffffe5; /* Or any other color you want */
   }
- /*  .poem-text {
-    margin-left: 150px;
-  } */
-/*   .poem-data{
-    margin-left: 150px;
-  } */
+
   .poem-title {
     font-family: "DM Serif Display", serif;
     font-weight: 500;

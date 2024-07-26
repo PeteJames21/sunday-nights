@@ -1,3 +1,12 @@
+.author-section {
+  padding: 1rem;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #ffffff9f;
+
+}
+
+
 .author-title {
   font-family: "DM Serif Display", serif;
   font-weight: 400;
@@ -15,4 +24,28 @@
   line-height: 28px;
   text-align: left;
   color: #1a1a1a;
+}
+
+/* IMAGE */
+.author-image {
+  display: block;
+  max-width: 150px;
+  margin: 20px auto;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 5px solid #ffffff9f;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.author-image:hover {
+  transform: scale(1.25);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+@media (min-width: 1024px) {
+  .author-section {
+    max-width: 70%;
+    background-color: #ffffff9f; /* Or any other color you want */
+  }
 }
