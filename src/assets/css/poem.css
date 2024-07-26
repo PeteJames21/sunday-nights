@@ -1,8 +1,10 @@
-.poem-section{
-  /* background-color: aqua; */
+.poem-section {
   background-color: #ffffffe5;
+  padding: 1rem; /* Add some padding for better appearance */
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box; /* Ensure padding is included in the width */
 }
-
 .poem-image {
   display: block;
   margin: 0 auto;
@@ -40,12 +42,16 @@
 
 /* FOR LAPTOPS */
 @media (min-width: 1024px) {
-  .poem-text {
-    margin-left: 150px;
+  .poem-section {
+    max-width: 50%;
+    background-color: #ffffffe5; /* Or any other color you want */
   }
-  .poem-data{
+ /*  .poem-text {
     margin-left: 150px;
-  }
+  } */
+/*   .poem-data{
+    margin-left: 150px;
+  } */
   .poem-title {
     font-family: "DM Serif Display", serif;
     font-weight: 500;
