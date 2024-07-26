@@ -1,6 +1,8 @@
 <div>
   <article class="snippet">
-    <h5 class="snippet__title">{{ post.data.title }}</h5>
+    <a href="{{ post.url }}">
+      <h5 class="snippet__title">{{ post.data.title }}</h5>
+    </a>
     <img src="{{ post.data.image }}" alt="poem cover image" class="snippet__image">
     <p class="snippet__meta">by
       <span>{{ post.data.author }}</span>
