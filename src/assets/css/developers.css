@@ -12,7 +12,7 @@ body {
   justify-content: center;
   padding: 40px 15px;
   background-color: #e5e5e5;
-  margin-bottom: 100px;
+
 }
 
 .profile-cards-container {
@@ -106,6 +106,7 @@ body {
   .profile-cards-container {
     flex-direction: column;
     align-items: center;
+    margin-bottom: 100px; /
   }
 
   .profile-card {
