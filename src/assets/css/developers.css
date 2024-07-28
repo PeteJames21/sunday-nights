@@ -1,0 +1,133 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+
+body {
+
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.profile-section {
+  display: flex;
+  justify-content: center;
+  padding: 40px 15px;
+  background-color: #e5e5e5;
+  margin-bottom: 100px;
+}
+
+.profile-cards-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+  justify-content: center;
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: calc(50% - 10px);
+  max-width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.profile-card:hover {
+  transform: translateY(-5px);
+}
+
+.profile-image img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+.profile-image img:hover {
+  border-radius: 0%;
+  scale: 1.25;
+}
+
+
+
+.profile-info {
+  padding: 10px;
+  flex: 1;
+}
+
+.profile-info h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+  font-family: "DM Serif Display", serif;
+}
+
+.profile-info p {
+  margin: 10px 0;
+  color: #666;
+  font-family: Merriweather, Georgia, serif;
+  font-size: 15px;
+
+}
+
+
+.social-links {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  margin-right: 20px;
+
+
+}
+
+.social-links a {
+  display: inline-block;
+  padding-left: 10px;
+  text-decoration: underline;
+
+}
+
+.social-links img {
+  width: 24px;
+  height: 24px;
+}
+.fa{
+  padding: 0 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .profile-cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-card {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .profile-image img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .profile-info {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .social-links img {
+    width: 20px;
+    height: 20px;
+  }
+
+}

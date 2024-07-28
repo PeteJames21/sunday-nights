@@ -40,6 +40,10 @@
   color: #1a1a1a;
 }
 
+footer{
+  position: fixed;
+  bottom: 0px;
+}
 /* FOR LAPTOPS */
 @media (min-width: 1024px) {
   .poem-section {
@@ -60,9 +64,9 @@
   }
 }
 
-/* FOR PHONES */
-.poem-section{
-  padding-left: 25px;
-  padding-right: 5px;
-  background-color: #ffffffe5;
-}
+    /* FOR PHONES */
+    .poem-section{
+      padding-left: 25px;
+      padding-right: 5px;
+      background-color: #ffffffe5;
+    }

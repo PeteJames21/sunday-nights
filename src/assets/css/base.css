@@ -1,3 +1,4 @@
+
 /*
 ------------------------
 CSS RESETS
@@ -108,6 +109,11 @@ nav {
   font-weight: bold;
 }
 
+footer {
+  background-color: #0066cc;
+  width: 100%;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .nav-links {
@@ -148,9 +154,9 @@ footer {
   align-items: center;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: #333;
+  /* background-color: #333;
   background: linear-gradient(68.6deg, rgb(252, 165, 241) 1.8%, rgb(181, 255, 255) 100.5%);
-  background: linear-gradient(180deg, #ffffff, #f0f0f0);
+  background: linear-gradient(180deg, #ffffff, #f0f0f0); */
   color: #000;
   margin-top: auto;
 }
