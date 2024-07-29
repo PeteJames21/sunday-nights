@@ -14,7 +14,7 @@ permalink: "{% if pagination.pageNumber > 0 %}index/page-{{ pagination.pageNumbe
   Explore all poems:
 </h1>
 {% set items = posts %}
-{% include "card_grid.njk" %}
+{% include "poem_card_grid.njk" %}
 
 <nav class="pagination">
   {% if pagination.href.previous %}

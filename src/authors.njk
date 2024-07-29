@@ -5,9 +5,6 @@ layout: "base.njk"
 <h2 class="page-titles">
   Explore Authors
 </h2>
-<div>
-  {% for author in collections.author %}
-    {% include "author_snippet.njk" %}
-    <br>
-  {% endfor %}
-</div>
+{% set items = collections.author %}
+{% include "poet_card_grid.njk" %}
+
