@@ -51,13 +51,9 @@
 }
 
 .card-title {
-  margin-top: 10px;
   align-self: center;
 }
 
-.card-poem-author {
-  margin-top: 5px;
-}
 
 .card-poem-snippet {
   align-self: left;
@@ -70,6 +66,10 @@
   height: 200px;
   width: 80%;
   overflow-y: hidden;
+}
+
+.card-poet-title {
+  margin-top: 10px;
 }
 
 .card-cover-image {

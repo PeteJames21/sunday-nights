@@ -4,7 +4,7 @@
     <img class="card-cover-image" src="{{ item.data.image }}" alt="cover" height="250">
   </div>
   <div class="card-content">
-    <p class="card-title">{{ item.data.name }}</p>
+    <p class="card-poet-title">{{ item.data.name }}</p>
     <div class="card-poet-snippet">
       {{ item.templateContent | truncate(250) | safe }}
     </div>
