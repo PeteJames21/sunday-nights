@@ -13,12 +13,8 @@ permalink: "{% if pagination.pageNumber > 0 %}index/page-{{ pagination.pageNumbe
 <h1 class="page-titles">
   Explore all poems:
 </h1>
-<div>
-  {% for post in posts %}
-    {% include "poem_snippet.njk" %}
-    <br>
-  {% endfor %}
-</div>
+{% set items = posts %}
+{% include "card_grid.njk" %}
 
 <nav class="pagination">
   {% if pagination.href.previous %}
