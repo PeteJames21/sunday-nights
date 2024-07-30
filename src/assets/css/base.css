@@ -165,19 +165,30 @@ footer {
   margin-top: auto;
 }
 
+
+/*
+ -------------------------------
+ pagination links
+ -------------------------------
+
+*/
 a.pagination-link.active {
-  background-color: orange;
+  border: 1px solid #000;
+  border-radius: 5px;
 }
 
 .pagination {
   display: flex;
+  align-self: center;
+  justify-content: center;
   flex-wrap: wrap;
   width: 75%;
   height: fit-content;
   gap: 10px;
+  margin-bottom: 20px;
 }
 
 a.pagination-link {
   padding: 0px 5px 0px 5px;
-  background-color: #eeeeee;
+  background-color: inherit;
 }
