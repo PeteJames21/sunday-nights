@@ -5,14 +5,13 @@ layout: "base.njk"
 <section class="author-section">
   <h3 class="author-title">This is {{ name }}</h3>
   <img class="author-image" src="{{ image }}" alt="author image">
-  <div class="author-content">{{ content | safe }}</div>
+    <div class="author-content">{{ content | safe }}</div>
 </section>
+
 <section>
-  <h3>My recent content</h3>
-  <div>
-    {% set posts = collections.post | filterByAuthor(name) %}
-    {% for post in posts | reverse %}
-      {% include "poem_snippet.njk" %}
-    {% endfor %}
-  </div>
-</section>
+    <h3 class="text-center author-title mb-4">My recent content</h3>
+    <div>
+      {% set items = collections.post | filterByAuthor(name) %}
+      {% include "poem_card_grid.njk" %}
+    </div>
+  </section>

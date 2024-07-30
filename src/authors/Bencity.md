@@ -1,5 +1,5 @@
 ---
-name: "Benson Maina"
+name: "Bencity"
 image: "https://picsum.photos/150"
 ---
 
