@@ -40,10 +40,6 @@
   color: #1a1a1a;
 }
 
-footer{
-  position: fixed;
-  bottom: 0px;
-}
 /* FOR LAPTOPS */
 @media (min-width: 1024px) {
   .poem-section {
