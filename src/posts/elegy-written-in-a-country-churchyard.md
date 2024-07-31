@@ -3,6 +3,8 @@ title: Elegy Written in a Country Churchyard
 image: "https://picsum.photos/150"
 date: "2024-07-16"
 author: "Bencity"
+tags:
+  - Death
 ---
 
 The boast of heraldry, the pomp of pow'r,

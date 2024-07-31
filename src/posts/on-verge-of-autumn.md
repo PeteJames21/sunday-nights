@@ -4,6 +4,8 @@ image: "https://picsum.photos/150"
 imageAlt: cover image
 date: "2024-07-21"
 author: Nosheen Irfan
+tags:
+  - Change
 ---
 
 Sultry heat
@@ -26,4 +28,4 @@ A whisper cuts the air
 Like a new knife
 Are you ready to let go
 The question drops
-From nature's lips. 
+From nature's lips.
