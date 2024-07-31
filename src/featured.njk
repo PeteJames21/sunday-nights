@@ -1,14 +1,18 @@
 ---
-title: "Featured Poems — Sunday Nights"
+title: "Sunday Nights — Featured"
 layout: "base.njk"
+
+pagination:
+  data: collections.featured
+  size: 5
+  alias: posts
+  reverse: true
 ---
 
-<h2 class="page-titles">
-  Explore featured poems:
-</h2>
-<div>
-  {% for post in collections.post | reverse %}
-    {% include "poem_snippet.njk" %}
-    <br>
-  {% endfor %}
-</div>
+<h1 class="page-titles">
+  ✨ Featured Poems ✨
+</h1>
+{% set items = posts %}
+{% include "poem_card_grid.njk" %}
+
+{% include "pagination.njk" %}

@@ -4,6 +4,8 @@ image: "https://picsum.photos/150"
 imageAlt: cover image
 date: "2024-07-21"
 author: Emily Dickinson
+tags:
+  - featured
 ---
 
 I’ll tell you how the sun rose, —
