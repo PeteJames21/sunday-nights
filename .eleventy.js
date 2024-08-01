@@ -1,5 +1,13 @@
 const markdownIt = require("markdown-it");
 
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]]; // Swap elements
+  }
+  return array;
+}
+
 module.exports = function (eleventyConfig) {
   let markdownItOptions = {
 		html: true,
@@ -27,6 +35,14 @@ module.exports = function (eleventyConfig) {
       selected = items[Math.floor(Math.random() * items.length)];
     }
     return selected;
+  });
+
+  eleventyConfig.addFilter("getRandomItems", function(items) {
+    /* Get 100 random items from collections.post */
+    // Shuffle the array
+    const shuffledArray = shuffleArray(items);
+    // Return the first 100 elements
+    return shuffledArray.slice(0, 100);
   });
 
   return {

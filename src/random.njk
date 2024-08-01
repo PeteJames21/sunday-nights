@@ -4,11 +4,39 @@ layout: "base.njk"
 ---
 
 <h2 class="page-titles">
-  Explore random poems:
+  Fetching your next read ...
 </h2>
-<div>
-  {% for post in collections.post %}
-    {% include "poem_snippet.njk" %}
-    <br>
+<div class="loader"></div>
+<div id="random-links" style="visibility: hidden;">
+  {#
+      This page returns a list of random links, from which the client
+      will select one link randomly to redirect the reader. The redirect
+      should be instant. If for any reason it is slow, a spinning wheel
+      is displayed.
+   #}
+  {% for post in collections.post | getRandomItems %}
+    <a href="{{ post.url }}"></a>
   {% endfor %}
 </div>
+
+<script>
+  // Navigate to a random link
+  // This code will be called on the client side.
+  let links = document.querySelectorAll('#random-links a');
+  links = Array.from(links).map(anchor => anchor.href);  // Convert to an array
+  // Prevent navigation to the same URL by removing the previous URL from the list
+  //  prior to selecting a random URL.
+  const previousUrl = document.referrer;
+  if (previousUrl) {
+    const segments = previousUrl.split('/').filter(segment => segment !== '');
+    const lastSegment = segments.pop() + '/';
+    const index = links.findIndex(item => item === lastSegment);
+    if (index !== -1) {
+      // Remove the item at that index
+      links.splice(index, 1);
+    }
+  }
+  const randomIndex = Math.floor(Math.random() * links.length);
+  const randomLink = links[randomIndex];
+  window.location.href = randomLink;
+</script>
