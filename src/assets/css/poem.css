@@ -40,6 +40,18 @@
   color: #1a1a1a;
 }
 
+.random-recommendation {
+  margin-top: 30px;
+}
+
+.random-recommendation p {
+  font-style: italic;
+}
+
+.random-recommendation a {
+  color: #0066cc;
+}
+
 /* FOR LAPTOPS */
 @media (min-width: 1024px) {
   .poem-section {

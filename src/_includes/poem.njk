@@ -9,4 +9,13 @@ layout: base.njk
     by {{ author }} on {{ date }}
   </p>
   <article class="poem-text">{{ content | safe}}</article>
+
+  {% set randomPost = collections.post | getRandom2(page) %}
+  {% if randomPost %}
+    <div class="random-recommendation">
+      <p>
+        You may also like: <a href="{{ randomPost.url }}">"{{ randomPost.data.title }}"</a>
+      </p>
+    </div>
+  {% endif %}
 </section>
