@@ -1,4 +1,5 @@
 const markdownIt = require("markdown-it");
+const lodashChunk = require('lodash.chunk');
 
 function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i--) {
@@ -43,6 +44,68 @@ module.exports = function (eleventyConfig) {
     const shuffledArray = shuffleArray(items);
     // Return the first 100 elements
     return shuffledArray.slice(0, 100);
+  });
+
+  /*
+    Add double pagination to poem topics.
+
+    credits: https://github.com/11ty/eleventy/issues/332#issuecomment-445236776
+  */
+  eleventyConfig.addCollection("doublePagination", function(collection) {
+    // Get unique list of tags
+    let tagSet = new Set();
+    collection.getAllSorted().map(function(item) {
+      if( "tags" in item.data ) {
+        let tags = item.data.tags;
+
+        // optionally filter things out before you iterate over?
+        const excluded = new Set(['post', 'featured', 'author']);
+        tags = tags.filter(item => !excluded.has(item));
+        for (let tag of tags) {
+          tagSet.add(tag);
+        }
+
+      }
+    });
+
+    // Get each item that matches the tag
+    let paginationSize = 20;
+    let tagMap = [];
+    let tagArray = [...tagSet];
+    for( let tagName of tagArray) {
+      let tagItems = collection.getFilteredByTag(tagName);
+      let pagedItems = lodashChunk(tagItems, paginationSize);
+      // console.log( tagName, tagItems.length, pagedItems.length );
+      for( let pageNumber = 0, max = pagedItems.length; pageNumber < max; pageNumber++) {
+        tagMap.push({
+          tagName: tagName,
+          pageNumber: pageNumber,
+          pageData: pagedItems[pageNumber]
+        });
+      }
+    }
+
+    /* return data looks like:
+      [{
+        tagName: "tag1",
+        pageNumber: 0
+        pageData: [] // array of items
+      },{
+        tagName: "tag1",
+        pageNumber: 1
+        pageData: [] // array of items
+      },{
+        tagName: "tag1",
+        pageNumber: 2
+        pageData: [] // array of items
+      },{
+        tagName: "tag2",
+        pageNumber: 0
+        pageData: [] // array of items
+      }]
+     */
+    //console.log( tagMap );
+    return tagMap;
   });
 
   return {

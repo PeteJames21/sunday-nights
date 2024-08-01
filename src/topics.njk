@@ -1,20 +1,16 @@
 ---
-layout: "base.njk"
+layout: base.njk
 pagination:
-  data: collections
+  data: collections.doublePagination
   size: 1
   alias: tag
-  filter:
-    - post
-    - all
-    - author
-permalink: /topics/{{ tag }}/
+permalink: /topics/{{ tag.tagName }}/{% if tag.pageNumber %}{{ tag.pageNumber + 1 }}/{% endif %}
 ---
 
 <h1 class="page-titles">
-  {{ tag }} Poems
+   Poems About "{{ tag.tagName }}"
 </h1>
 
-{% set items = collections[ tag ] %}
+{% set items = tag.pageData %}
 {% include "poem_card_grid.njk" %}
-
+{% include "pagination.njk" %}
