@@ -200,8 +200,7 @@ Loader animation
 */
 .loader {
   border: 16px solid #f3f3f3;
-  margin-top: 20px;
-  align-self: center;
+  margin: auto;
   border-radius: 50%;
   border-top: 16px solid #3498db;
   width: 120px;
