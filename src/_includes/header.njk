@@ -21,6 +21,19 @@
         <a href="/random">Random</a>
       </li>
       <li>
+        <div class="dropdown show">
+          <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Topics
+          </a>
+
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            {% for tag in collections.tagsList %}
+              <a class="dropdown-item" href="/topics/{{ tag | slugify }}/">{{ tag }}</a>
+            {% endfor %}
+          </div>
+        </div>
+      </li>
+      <li>
         <a href="/authors">Authors</a>
       </li>
     </ul>

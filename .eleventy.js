@@ -46,6 +46,27 @@ module.exports = function (eleventyConfig) {
     return shuffledArray.slice(0, 100);
   });
 
+  // Create a collection containing a list of all tags
+  eleventyConfig.addCollection("tagsList", function(collection) {
+    let tagSet = new Set();
+    collection.getAll().forEach(function(item) {
+      if ("tags" in item.data) {
+        let tags = item.data.tags;
+
+        // Optionally filter things out before you iterate over them
+        const excluded = new Set(['post', 'featured', 'author']);
+        tags = tags.filter(tag => !excluded.has(tag));
+        for (let tag of tags) {
+          tagSet.add(tag);
+        }
+      }
+    });
+    tags = [...tagSet]; // Convert the Set to an array
+    tags.sort();
+    return tags;
+  });;
+
+
   /*
     Add double pagination to poem topics.
 
