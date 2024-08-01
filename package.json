@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": "eleventy --serve",
-    "build": "eleventy"
+    "build": "npm install && eleventy"
   },
   "keywords": [],
   "author": "",
