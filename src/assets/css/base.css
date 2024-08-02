@@ -63,6 +63,14 @@ header {
   z-index: 1;
 }
 
+.header .logo{
+  /* background-color: blue; */
+  font-family: 'Great Vibes', cursive;
+  font-weight: bolder;
+  font-size: 1.5rem;
+
+}
+
 nav {
   display: flex;
   align-items: center;
