@@ -7,6 +7,7 @@ author: Bencity
 tags:
   - Love
   - Sea
+  - featured
 ---
 
 Standing at a cliff’s edge

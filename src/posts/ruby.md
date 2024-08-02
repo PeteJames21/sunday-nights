@@ -25,4 +25,3 @@ Ruby,
 Like the golden sun
 From sunrise to sunset
 You’re a crown on my head!
-Tags: Ruby Love
