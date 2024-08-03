@@ -5,7 +5,7 @@ imageAlt: cover image
 date: "2024-07-21"
 author: Emily Dickinson
 tags:
-  - life
+  - Life
 ---
 
 I’ll tell you how the sun rose, —
