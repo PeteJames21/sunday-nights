@@ -1,0 +1,20 @@
+.error-404 {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+}
+
+.error-code {
+  font-size: 5em;
+  height: fit-content;
+  padding: 0;
+}
+
+.error-description {
+  font-size: 2em;
+  text-align: center;
+}
