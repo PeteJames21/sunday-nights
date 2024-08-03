@@ -66,6 +66,11 @@ module.exports = function (eleventyConfig) {
     return tags;
   });;
 
+  // Add collection consistsing of author names
+  eleventyConfig.addCollection("authorNames", function(collection) {
+    const authorCollection = collection.getFilteredByTag("author");
+    return authorCollection.map(author => author.data.name);
+  });
 
   /*
     Add double pagination to poem topics.

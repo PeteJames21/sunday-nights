@@ -7,7 +7,7 @@
       <img src="{{ item.data.image }}" alt="avatar" class="card-avatar">
       <div class="mu">
         <a href="#" class="card-title">{{ item.data.title }}</a>
-        <p class="card-poem-author">by <a href="/authors/{{ item.data.author | slugify}}">{{ item.data.author }}</a></p>
+        <p class="card-poem-author">by {% include "author_url.njk" %}</p>
         <div class="card-poem-snippet">
           {{ item.templateContent | truncate(150) | safe }}
         </div>

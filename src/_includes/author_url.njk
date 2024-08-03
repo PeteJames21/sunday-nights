@@ -1,0 +1,38 @@
+{#
+  Can be used within poem.njk or poem_card.njk to get the author link
+#}
+
+{% set url = "/content-not-found" %}
+
+{# Set the URL depending on whether the author is internal or external #}
+{% if authorURL %}
+  {% set url = authorURL %}
+{% elif author %}
+  {% if author in collections.authorNames %}
+    {% set authorSlug = author | slugify %}
+    {% set url = "/authors/" + authorSlug %}
+  {% endif %}
+{% elif item %}
+  {% if item.data.authorURL %}
+    {% set url = item.data.authorURL %}
+  {% elif item.data.author %}
+    {% if item.data.author in collections.authorNames %}
+      {% set authorSlug = item.data.author | slugify %}
+      {% set url = "/authors/" + authorSlug %}
+    {% endif %}
+  {% endif %}
+{% endif %}
+
+{# Set the author name #}
+{% set _name = "Anonymous" %}
+{% if author %}
+  {% set _name = author %}
+{% elif item %}
+  {% if item.data.author %}
+    {% set _name = item.data.author %}
+  {% endif %}
+{% endif %}
+
+<a href="{{ url }}" style="text-decoration: underline;">{{ _name }}</a>
+
+
