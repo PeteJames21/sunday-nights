@@ -1,10 +1,17 @@
 ---
 title: "Authors — Sunday Nights"
 layout: "base.njk"
+
+pagination:
+  data: collections.author
+  size: 12
+  alias: authors
+  reverse: true
 ---
 <h2 class="page-titles">
   Explore Authors
 </h2>
-{% set items = collections.author %}
+{% set items = authors %}
 {% include "poet_card_grid.njk" %}
+{% include "pagination.njk" %}
 
