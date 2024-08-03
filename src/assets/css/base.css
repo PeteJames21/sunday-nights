@@ -230,3 +230,7 @@ Loader animation
 .dropdown-menu .dropdown-item:hover {
   background-color: #e2f1ff;
 }
+
+footer a {
+  color: #0066cc;
+}
