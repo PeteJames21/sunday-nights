@@ -6,7 +6,7 @@ pagination:
   alias: tag
 permalink: /topics/{{ tag.tagName | slugify }}/{% if tag.pageNumber %}{{ tag.pageNumber + 1 }}/{% endif %}
 eleventyComputed:
-  title: "{{ tag.tagName }} Poems — Sunday Nights"
+  title: "{{ tag.tagName }} Poems"
 ---
 
 <h1 class="page-titles">
