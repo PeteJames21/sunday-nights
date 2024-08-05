@@ -5,8 +5,6 @@ pagination:
   size: 1
   alias: tag
 permalink: /topics/{{ tag.tagName | slugify }}/{% if tag.pageNumber %}{{ tag.pageNumber + 1 }}/{% endif %}
-eleventyComputed:
-  title: "{{ tag.tagName }} Poems"
 ---
 
 <h1 class="page-titles">
@@ -15,4 +13,4 @@ eleventyComputed:
 
 {% set items = tag.pageData %}
 {% include "poem_card_grid.njk" %}
-{% include "pagination.njk" %}
+{% include "tag_pagination.njk" %}

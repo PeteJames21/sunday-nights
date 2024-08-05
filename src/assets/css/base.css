@@ -184,6 +184,14 @@ a.pagination-link.active {
   border-radius: 5px;
 }
 
+.tag-pagination-link {
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 0px 5px 0px 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 .pagination {
   display: flex;
   align-self: center;

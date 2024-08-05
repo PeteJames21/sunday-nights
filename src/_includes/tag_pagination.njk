@@ -1,0 +1,19 @@
+{#
+  Unlike pagination.njk, the pagination links in this template do not include
+  page numbers because double pagination does not have a machanism for filtering
+  objects from the pagination object based on tag names.
+ #}
+<nav class="pagination">
+  {% if pagination.pages.length > 1 %}
+    {% if pagination.href.previous %}
+      {% if pagination.page.previous.tagName === tag.tagName %}
+        <a class="tag-pagination-link" href="{{ pagination.href.previous }}"> &lt;&lt; Previous</a>
+      {% endif %}
+    {% endif %}
+    {% if pagination.href.next %}
+      {% if pagination.page.next.tagName === tag.tagName %}
+        <a class="tag-pagination-link" href="{{ pagination.href.next }}">Next &gt;&gt;</a>
+      {% endif %}
+    {% endif %}
+  {% endif %}
+</nav>
