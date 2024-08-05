@@ -24,7 +24,7 @@ module.exports = function (eleventyConfig) {
     return posts.filter(item => item.data.author === authorName);
   });
 
-  eleventyConfig.addFilter("getRandom2", function(items,avoid) {
+  eleventyConfig.addFilter("getRandom", function(items,avoid) {
     /*
     this filter assumes items are pages
     we need to loop until we don't pick avoid,

@@ -10,7 +10,7 @@ layout: base.njk
   </p>
   <article class="poem-text">{{ content | safe}}</article>
 
-  {% set randomPost = collections.post | getRandom2(page) %}
+  {% set randomPost = collections.post | getRandom(page) %}
   {% if randomPost %}
     <div class="random-recommendation">
       <p>
