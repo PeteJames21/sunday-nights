@@ -239,6 +239,11 @@ Loader animation
   background-color: #e2f1ff;
 }
 
+.dropdown-menu {
+  height: 50vh;
+  overflow-y: auto;
+}
+
 footer a {
   color: #0066cc;
 }
