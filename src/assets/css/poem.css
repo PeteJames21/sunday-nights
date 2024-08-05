@@ -1,6 +1,6 @@
 .poem-section {
   background-color: #ffffffe5;
-  padding: 1rem; /* Add some padding for better appearance */
+  padding: 2rem; /* Add some padding for better appearance */
   width: 100%;
   margin: 0 auto;
   box-sizing: border-box; /* Ensure padding is included in the width */
@@ -59,7 +59,9 @@
 /* FOR LAPTOPS */
 @media (min-width: 1024px) {
   .poem-section {
-    max-width: 50%;
+    width: auto;
+    max-width: 60%;
+    min-width: 50%;
     background-color: #ffffffe5; /* Or any other color you want */
   }
 
@@ -75,10 +77,11 @@
     /* font-weight: 700; */
   }
 }
-
+@media (max-width: 768px) {
     /* FOR PHONES */
     .poem-section{
-      padding-left: 25px;
-      padding-right: 5px;
+      padding-left: 20px;
+      padding-right: 20px;
       background-color: #ffffffe5;
     }
+  }
