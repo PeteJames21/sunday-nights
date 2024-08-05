@@ -40,6 +40,10 @@
   color: #1a1a1a;
 }
 
+.poem-text a {
+  text-decoration: underline;
+}
+
 .random-recommendation {
   margin-top: 50px;
 }

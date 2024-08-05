@@ -83,6 +83,7 @@
   width: var(--card-width);
   height: 220px;
   border-radius: var(--card-border-radius) var(--card-border-radius) 0px 0px;
+  object-fit: cover;
 }
 
 .hover-shadow-box-animation {
