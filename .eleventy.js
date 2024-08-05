@@ -54,7 +54,7 @@ module.exports = function (eleventyConfig) {
         let tags = item.data.tags;
 
         // Optionally filter things out before you iterate over them
-        const excluded = new Set(['post', 'featured', 'author']);
+        const excluded = new Set(['post', 'featured', 'author', 'blog']);
         tags = tags.filter(tag => !excluded.has(tag));
         for (let tag of tags) {
           tagSet.add(tag);

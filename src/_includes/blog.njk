@@ -3,14 +3,13 @@ layout: base.njk
 ---
 
 <section class="poem-section">
-  {# <img class="poem-image" src="{{ image }}" alt="poem cover image"> #}
   <h1 class="poem-title">{{ title }}</h1>
   <p class="poem-data">
     by {% include "author_url.njk" %} on {{ date }}
   </p>
   <article class="poem-text">{{ content | safe}}</article>
 
-  {% set randomPost = collections.post | getRandom(page) %}
+  {% set randomPost = collections.blog | getRandom(page) %}
   {% if randomPost %}
     <div class="random-recommendation">
       <p>

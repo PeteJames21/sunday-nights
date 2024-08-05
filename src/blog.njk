@@ -1,0 +1,18 @@
+---
+title: "Blog"
+layout: "base.njk"
+
+pagination:
+  data: collections.blog
+  size: 12
+  alias: posts
+  reverse: true
+permalink: "blog/"
+---
+
+<h1 class="page-titles">
+  Blog Articles
+</h1>
+{% set items = posts %}
+{% include "poem_card_grid.njk" %}
+{% include "pagination.njk" %}
