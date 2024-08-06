@@ -42,9 +42,7 @@ module.exports = function (eleventyConfig) {
       // Loop until we find a tag with more than two items
       while (myItems.length < 2 && i < myTags.length) {
         selectedTag = myTags[i];
-        console.log("-----", "selected tag:",selectedTag, "-----", avoid.url);
         myItems = items.filter(item => item.data.tags.includes(selectedTag));
-        console.log("---myitems", myItems.length);
         i++;
       }
     }
@@ -126,7 +124,6 @@ module.exports = function (eleventyConfig) {
     for( let tagName of tagArray) {
       let tagItems = collection.getFilteredByTag(tagName).reverse();
       let pagedItems = lodashChunk(tagItems, paginationSize);
-      // console.log( tagName, tagItems.length, pagedItems.length );
       for( let pageNumber = 0, max = pagedItems.length; pageNumber < max; pageNumber++) {
         tagMap.push({
           tagName: tagName,
