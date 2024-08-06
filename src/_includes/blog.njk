@@ -7,7 +7,7 @@ layout: base.njk
   <p class="poem-data">
     by {% include "author_url.njk" %} on {{ date }}
   </p>
-  <article class="poem-text">{{ content | safe}}</article>
+  <article class="blog-text">{{ content | safe}}</article>
 
   {% set randomPost = collections.blog | getRandom(page, tags) %}
   {% if randomPost %}
