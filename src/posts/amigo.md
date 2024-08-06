@@ -9,7 +9,7 @@ tags:
   - Birthday
 ---
 
-When friend became kin,
+When friends became kin,
 I knew good things could be seen,
 Through you this I’ve known-
 And so much you’ve grown,

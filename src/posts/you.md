@@ -6,7 +6,6 @@ date: "2024-08-02"
 author: Bencity
 tags:
   - Love
-  - Romance
 ---
 
 The longer it takes
