@@ -24,20 +24,45 @@ module.exports = function (eleventyConfig) {
     return posts.filter(item => item.data.author === authorName);
   });
 
-  eleventyConfig.addFilter("getRandom", function(items,avoid) {
+  // To be used to get a recommendation for the next read
+  eleventyConfig.addFilter("getRandom", function(items, avoid, tags) {
     /*
     this filter assumes items are pages
     we need to loop until we don't pick avoid,
     */
-    if(!items.length || items.length < 2) return;
 
-    let selected = items[Math.floor(Math.random() * items.length)];
+    // Only include posts with similar tags
+    const excludes = ["post", "blog", "featured"];
+    let myTags = tags.filter(tag => !excludes.includes(tag));
+    let myItems = [];
+    let selectedTag = "";
+    let i = 0;
+    if (myTags.length > 0) {
+      myTags = shuffleArray(myTags);
+      // Loop until we find a tag with more than two items
+      while (myItems.length < 2 && i < myTags.length) {
+        selectedTag = myTags[i];
+        console.log("-----", "selected tag:",selectedTag, "-----", avoid.url);
+        myItems = items.filter(item => item.data.tags.includes(selectedTag));
+        console.log("---myitems", myItems.length);
+        i++;
+      }
+    }
+    // If there are not enough items with matching tags, attempt to get a random item
+      // from the parent collection so that at least something is recommended.
+    if (myItems.length < 2) {
+      myItems = items;
+    }
+    if(!myItems.length || myItems.length < 2) return;
+
+    let selected = myItems[Math.floor(Math.random() * myItems.length)];
     while(selected.url === avoid.url) {
-      selected = items[Math.floor(Math.random() * items.length)];
+      selected = myItems[Math.floor(Math.random() * myItems.length)];
     }
     return selected;
   });
 
+  // To be used to fetch data for the /random/ page
   eleventyConfig.addFilter("getRandomItems", function(items) {
     /* Get 100 random items from collections.post */
     // Shuffle the array
