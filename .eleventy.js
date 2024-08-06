@@ -24,6 +24,14 @@ module.exports = function (eleventyConfig) {
     return posts.filter(item => item.data.author === authorName);
   });
 
+  eleventyConfig.addFilter("getAuthorImage", function(authorName, authorsCollection) {
+    const author = authorsCollection.find(author => author.data.name === authorName);
+    if (author === undefined) {
+      return "/assets/images/authors/default.jpg";
+    }
+    return author.data.image;
+  });
+
   // To be used to get a recommendation for the next read
   eleventyConfig.addFilter("getRandom", function(items, avoid, tags) {
     /*
