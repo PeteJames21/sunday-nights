@@ -1,5 +1,5 @@
 ---
-title: Wanderers
+title: Your Name
 image: "https://picsum.photos/150"
 imageAlt: cover image
 date: "2024-08-02"
