@@ -14,4 +14,4 @@ Took in the scent and pollen.
 As the rose I hand withered,
 The pollen in lungs blossomed
 Now her breath,
-Her the scent of a rose
+Has the scent of a rose
