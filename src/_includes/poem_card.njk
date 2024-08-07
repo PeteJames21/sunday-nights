@@ -1,13 +1,13 @@
 <div class="card hover-shadow-box-animation">
   <div class="hidden-link" style="display:none;">{{ item.url }}</div>
     <div>
-      <img class="card-cover-image" src="{{ item.data.image | getDefaultImage }}" alt="cover" loading="lazy">
+      <img class="card-cover-image" src="{{ item.data.image | getDefaultImage }}" alt="" loading="lazy" onerror="this.onerror=null; this.src='/assets/images/cover-images/default.jpg';">
     </div>
     <div class="card-content">
       {% if item.data.authorImage %}
-        <img src="{{ item.data.authorImage }}" alt="avatar" class="card-avatar">
+        <img src="{{ item.data.authorImage }}" alt="" onerror="this.onerror=null; this.src='/assets/images/authors/default.jpg';" class="card-avatar">
       {% else %}
-        <img src="{{ item.data.author | getAuthorImage(collections.author) }}" alt="avatar" class="card-avatar">
+        <img src="{{ item.data.author | getAuthorImage(collections.author) }}" alt="" onerror="this.onerror=null; this.src='/assets/images/authors/default.jpg';" class="card-avatar" >
       {% endif %}
       <div class="mu">
         <a href="#" class="card-title font-weight-bold">{{ item.data.title }}</a>
