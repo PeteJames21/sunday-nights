@@ -1,6 +1,5 @@
 ---
 title: Caterpillar
-imageAlt: cover image
 date: "2024-07-23"
 author: Scarlet
 tags:

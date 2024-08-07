@@ -1,7 +1,5 @@
 ---
 title: I Picked Up A Star
-image: "https://picsum.photos/150"
-imageAlt: cover image
 date: "2024-08-06"
 author: Bencity
 tags:

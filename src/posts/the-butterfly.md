@@ -1,6 +1,5 @@
 ---
 title: The Butterfly
-imageAlt: cover image
 date: "2024-07-23"
 author: Heather Reneé Adamkiewicz
 ---

@@ -1,6 +1,5 @@
 ---
 title: On Verge Of Autumn
-imageAlt: cover image
 date: "2024-07-21"
 author: Nosheen Irfan
 tags:
