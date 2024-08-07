@@ -15,7 +15,7 @@ Rippling the bare sea
 Gently it stings my eyes
 Swooshes over me with grace
 With the sound of a howling wolf-
-And the scent of salt and lue.
+And the scent of salt and blue.
 Slowly I lose my balance,
 In the thrill, I part my lips
 The tasteless wind gushes in
