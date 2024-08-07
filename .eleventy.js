@@ -3,6 +3,12 @@ const lodashChunk = require('lodash.chunk');
 const fs = require('fs');
 const path = require('path');
 
+/**
+ * This array contains special tags that reference names of collections. It is used
+ * in areas where we want to select only additional tags related to topics.
+ */
+const specialTags = ['post', 'featured', 'author', 'blog', 'swahili']
+
 function getRandomInt(min, max) {
   // Ensure min and max are inclusive
   min = Math.ceil(min);
@@ -88,15 +94,20 @@ module.exports = function (eleventyConfig) {
   });
 
   // To be used to get a recommendation for the next read
-  eleventyConfig.addFilter("getRandom", function(items, avoid, tags) {
+  eleventyConfig.addFilter("getRandom", function(items, avoid, tags, swahili=false) {
     /*
     this filter assumes items are pages
     we need to loop until we don't pick avoid,
     */
 
-    // Only include posts with similar tags
-    const excludes = ["post", "blog", "featured"];
-    let myTags = tags.filter(tag => !excludes.includes(tag));
+    // Only include posts with similar tags;
+    let myTags = [];
+    if (swahili) {
+      myTags = ['swahili'];
+    }
+    else {
+      myTags = tags.filter(tag => !specialTags.includes(tag));
+    }
     let myItems = [];
     let selectedTag = "";
     let i = 0;
@@ -140,7 +151,7 @@ module.exports = function (eleventyConfig) {
         let tags = item.data.tags;
 
         // Optionally filter things out before you iterate over them
-        const excluded = new Set(['post', 'featured', 'author', 'blog']);
+        const excluded = new Set(specialTags);
         tags = tags.filter(tag => !excluded.has(tag));
         for (let tag of tags) {
           tagSet.add(tag);
@@ -171,7 +182,7 @@ module.exports = function (eleventyConfig) {
         let tags = item.data.tags;
 
         // optionally filter things out before you iterate over?
-        const excluded = new Set(['post', 'featured', 'author']);
+        const excluded = new Set(specialTags);
         tags = tags.filter(item => !excluded.has(item));
         for (let tag of tags) {
           tagSet.add(tag);

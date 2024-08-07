@@ -1,0 +1,19 @@
+---
+title: "Swahili Poems (Mashairi)"
+layout: "base.njk"
+
+pagination:
+  data: collections.swahili
+  size: 12
+  alias: posts
+  reverse: true
+permalink: "swahili-poems/"
+---
+
+<h1 class="page-titles">
+  Explore Swahili Poetry (Mashairi)
+</h1>
+{% set items = posts %}
+{% include "poem_card_grid.njk" %}
+
+{% include "pagination.njk" %}

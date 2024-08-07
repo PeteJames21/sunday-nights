@@ -11,7 +11,7 @@ layout: "base.njk"
 <section>
     <h3 class="text-center author-title mb-4">My recent content</h3>
     <div>
-      {% set items = collections.post.concat(collections.blog) | filterByAuthor(name) %}
+      {% set items = collections.post.concat(collections.blog).concat(collections.swahili) | filterByAuthor(name) %}
       {% include "poem_card_grid.njk" %}
     </div>
   </section>

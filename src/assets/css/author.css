@@ -29,12 +29,14 @@
 /* IMAGE */
 .author-image {
   display: block;
-  max-width: 150px;
+  width: 150px;
+  height: 150px;
   margin: 20px auto;
   border-radius: 50%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border: 5px solid #ffffff9f;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  object-fit: cover;
 }
 
 .author-image:hover {
