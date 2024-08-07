@@ -40,8 +40,10 @@
 .card-avatar {
   border-radius: 50%;
   width: 80px;
+  height: 80px;
   position: relative;
   top: -40px;
+  object-fit: cover;
 }
 
 /*

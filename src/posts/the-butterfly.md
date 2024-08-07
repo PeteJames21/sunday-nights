@@ -1,6 +1,5 @@
 ---
 title: The Butterfly
-image: "https://picsum.photos/150"
 imageAlt: cover image
 date: "2024-07-23"
 author: Heather Reneé Adamkiewicz

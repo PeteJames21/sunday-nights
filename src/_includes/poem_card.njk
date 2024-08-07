@@ -1,10 +1,14 @@
 <div class="card hover-shadow-box-animation">
   <div class="hidden-link" style="display:none;">{{ item.url }}</div>
     <div>
-      <img class="card-cover-image" src="{{ item.data.image }}" alt="cover">
+      <img class="card-cover-image" src="{{ item.data.image | getDefaultImage }}" alt="cover" loading="lazy">
     </div>
     <div class="card-content">
-      <img src="{{ item.data.author | getAuthorImage(collections.author) }}" alt="avatar" class="card-avatar">
+      {% if item.data.authorImage %}
+        <img src="{{ item.data.authorImage }}" alt="avatar" class="card-avatar">
+      {% else %}
+        <img src="{{ item.data.author | getAuthorImage(collections.author) }}" alt="avatar" class="card-avatar">
+      {% endif %}
       <div class="mu">
         <a href="#" class="card-title font-weight-bold">{{ item.data.title }}</a>
         <p class="card-poem-author">by {% include "author_url.njk" %}</p>

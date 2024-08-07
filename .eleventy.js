@@ -1,5 +1,31 @@
 const markdownIt = require("markdown-it");
 const lodashChunk = require('lodash.chunk');
+const fs = require('fs');
+const path = require('path');
+
+function getRandomInt(min, max) {
+  // Ensure min and max are inclusive
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  // Generate the random integer
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+// Get a random file name from a directory
+function getRandomFileName(dirPath) {
+  // Read the directory
+  const files = fs.readdirSync(dirPath);
+
+  const filteredFiles = files.filter(file => fs.lstatSync(path.join(dirPath, file)).isFile());
+
+  if (filteredFiles.length === 0) {
+    throw new Error('No files found in the directory.');
+  }
+
+  // Select a random file
+  const randomFile = filteredFiles[Math.floor(Math.random() * filteredFiles.length)];
+  return randomFile;
+}
 
 function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i--) {
@@ -30,6 +56,35 @@ module.exports = function (eleventyConfig) {
       return "/assets/images/authors/default.jpg";
     }
     return author.data.image;
+  });
+
+  /**
+   * Return a default random image from the random image directory
+   * if the image has not been specified.
+   */
+  eleventyConfig.addFilter("getDefaultImage2", function(image) {
+    if (image === undefined) {
+      try {
+        const fileName = getRandomFileName("./src/assets/images/random");
+        const f = path.join("/assets/images/random", fileName)
+        console.log('.......Random file name:', f);
+        return f;
+      } catch (error) {
+        console.error("Error while getting random image:", error.message);
+      }
+    }
+    return image;
+    });
+
+  /**
+   * Return a default random image from picsum if the image has not been specified.
+   */
+  eleventyConfig.addFilter("getDefaultImage", function(image) {
+    if (image) {
+      return image;
+    }
+    const randInt = getRandomInt(1, 100000);
+    return `https://picsum.photos/seed/${randInt}/540/370`
   });
 
   // To be used to get a recommendation for the next read

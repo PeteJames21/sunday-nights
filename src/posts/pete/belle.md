@@ -1,6 +1,6 @@
 ---
 title: Belle
-image: "https://picsum.photos/150"
+image: ""
 imageAlt: cover image
 date: "2018-01-22"
 author: Pete

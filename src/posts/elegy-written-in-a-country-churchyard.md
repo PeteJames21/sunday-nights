@@ -1,8 +1,9 @@
 ---
-title: Elegy Written in a Country Churchyard
-image: "https://picsum.photos/150"
+title: Elegy Written in a Country Churchyard (An Excerpt)
 date: "2024-07-16"
-author: "Bencity"
+author: "Thomas Gray"
+authorURL: "https://en.wikipedia.org/wiki/Thomas_Gray"
+authorImage: "/assets/images/authors/thomas-gray.jpg"
 tags:
   - Death
 ---

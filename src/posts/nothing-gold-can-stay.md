@@ -1,6 +1,5 @@
 ---
 title: Nothing Gold Can Stay
-image: "https://picsum.photos/150"
 imageAlt: cover image
 date: "2024-07-20"
 author: Robert Frost

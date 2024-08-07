@@ -1,6 +1,6 @@
 ---
 title: Phoenix
-image: "https://picsum.photos/150"
+image: ""
 imageAlt: cover image
 date: "2018-04-10"
 author: Pete
