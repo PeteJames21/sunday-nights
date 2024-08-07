@@ -14,7 +14,6 @@ Or is this it
 
 And when I sink
 To the very depths below
-Like the ocean below
 Still, I ponder
 Is it a phase
 Or is this it?

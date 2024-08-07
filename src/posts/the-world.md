@@ -13,6 +13,6 @@ Poked me twice and said –
 “Write me a poem!” I said
 I don’t write well either
 Poked me thrice and said –
-“Then what ca you do?”
+“Then what can you do?”
 I said darling, the world,
 I’ll give you the world!

@@ -7,10 +7,10 @@ tags:
 ---
 
 We are all threads
-Hoked to the needle of time
+Hooked to the needle of time
 Poking in and out
 Stitching the fabric of our lives
-There are never ends pf beginnings
+There are never ends or beginnings
 Only life getting bigger
 Until the needle
 Runs out of thread!

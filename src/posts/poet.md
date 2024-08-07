@@ -15,6 +15,6 @@ He sings his way to fame.
 Many men are born,
 But forgotten once gone,
 But poets – joy they bring
-With their words that song
+With their words that sing
 I want to be a poet
 Said a boy I know!

@@ -14,4 +14,4 @@ And so much you’ve grown,
 Here I remind you it’s true,
 A true friend is such as you.
 Many honest prayers for you
-And abundant wises so true
+And abundant wishes so true

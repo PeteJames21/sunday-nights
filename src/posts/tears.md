@@ -11,9 +11,9 @@ And the sun is hidden from view
 With cold piercing winds –
 And dark omnibus shadows:
 Mothers rush to take the babes in
-The chickens, the goat and al
+The chickens, the goat and all
 Sensible creatures take cover
-As the clods clatter and bang
+As the clouds clatter and bang
 And all outside is deserted
 We, we come out to play
 As the rain soaks us

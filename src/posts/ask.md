@@ -10,5 +10,5 @@ tags:
 When you want someone,
 Don’t be afraid to ask –
 What do they want?
-Or even better –
+Or better yet –
 Who do they want.

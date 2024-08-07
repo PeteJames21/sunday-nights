@@ -1,9 +1,10 @@
 ---
-title: Mender
+title: Starry Nights
 date: "2024-08-06"
 author: Bencity
 tags:
   - Life
+  - Star
 ---
 
 Two things gladden me

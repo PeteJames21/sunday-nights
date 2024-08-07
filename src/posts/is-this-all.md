@@ -7,7 +7,7 @@ tags:
 ---
 
 When a top the world you be
-Before you al of life you see
+Before you all of life you see
 You ask just like me
 Is this all there is?
 
