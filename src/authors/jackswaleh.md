@@ -1,5 +1,5 @@
 ---
-name: "Jack Swaleh"
+name: "JackSwaleh"
 image: "/assets/images/authors/swaleh.jpeg"
 ---
 
@@ -8,4 +8,4 @@ Mashua yangu mashahiri
 Niongeze umahiri
 Karibuni tukariri
 
- JackSwaleh™
+JackSwaleh™

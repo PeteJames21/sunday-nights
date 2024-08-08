@@ -1,7 +1,7 @@
 ---
 title: Penzi Kibarua
 date: "2024-08-07"
-author: "Jack Swaleh"
+author: "JackSwaleh"
 ---
 
 Nakukosea kwa kweli, nimekosa kutimiza
