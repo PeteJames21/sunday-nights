@@ -72,8 +72,7 @@ module.exports = function (eleventyConfig) {
     if (image === undefined) {
       try {
         const fileName = getRandomFileName("./src/assets/images/random");
-        const f = path.join("/assets/images/random", fileName)
-        console.log('.......Random file name:', f);
+        const f = path.join("/assets/images/random", fileName);
         return f;
       } catch (error) {
         console.error("Error while getting random image:", error.message);
