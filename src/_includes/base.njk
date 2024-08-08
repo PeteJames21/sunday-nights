@@ -21,7 +21,8 @@
       {# Append content from article, if any #}
       {% for item in collections.articles %}
         {% if page.url === item.url %}
-          {% set desc = desc ~ '<br>' ~ item.content %}
+          {% set content = item.content | toPlainText %}
+          {% set desc = desc ~ ': '~ content %}
         {% endif %}
       {% endfor %}
 

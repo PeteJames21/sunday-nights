@@ -1,5 +1,6 @@
 const markdownIt = require("markdown-it");
 const lodashChunk = require('lodash.chunk');
+const { htmlToText } = require('html-to-text');
 const fs = require('fs');
 const path = require('path');
 
@@ -90,6 +91,11 @@ module.exports = function (eleventyConfig) {
     }
     const randInt = getRandomInt(1, 100000);
     return `https://picsum.photos/seed/${randInt}/540/370`
+  });
+
+  // Extract text from html markup
+  eleventyConfig.addFilter("toPlainText", function(html) {
+    return htmlToText(html, { wordwrap: false }).replace(/[\r\n]+/g, ' ');;
   });
 
   // To be used to get a recommendation for the next read

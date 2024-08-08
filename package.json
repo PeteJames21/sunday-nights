@@ -12,6 +12,7 @@
   "description": "",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
+    "html-to-text": "^9.0.5",
     "lodash.chunk": "^4.2.0",
     "markdown-it": "^14.1.0"
   }
