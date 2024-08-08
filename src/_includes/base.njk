@@ -4,7 +4,12 @@
       <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
 
       {# SEO Links #}
-      <title>{% if title %}{{ title }} – Sunday Nights{% else %}Sunday Nights{% endif %}</title>
+      {% if title %}
+        {% set pageTitle = title ~ " - Sunday Nights" %}
+      {% else %}
+        {% set pageTitle = "Sunday Nights" %}
+      {% endif %}
+      <title>{{ pageTitle }}</title>
 
       {# Set the page description #}
       {% set defaultDescription = "" %}
@@ -16,9 +21,9 @@
       <meta name="description" content="{{ description | default(desc) }}">
 
       <!-- Google / Search Engine Tags -->
-      <meta itemprop="name" content="Sunday Nights">
-      <meta itemprop="description" content="{{ desc }}">
-      <meta itemprop="image" content="{{ image | getDefaultImage2 }}">
+      <meta property="og:title" content="{{ pageTitle }}">
+      <meta property="og:description" content="{{ desc }}">
+      <meta property="og:image" content="{{ image | getDefaultImage2 }}">
 
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
