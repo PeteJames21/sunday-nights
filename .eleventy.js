@@ -168,6 +168,12 @@ module.exports = function (eleventyConfig) {
     return authorCollection.map(author => author.data.name);
   });
 
+  // A collection composed of items that count as articles, i.e. whose content
+  // can be used to generate previews when sharing their links on social media.
+  eleventyConfig.addCollection("articles", function(collection) {
+    const articles = collection.getFilteredByGlob("**/*.md");
+    return articles;
+  });
   /*
     Add double pagination to poem topics.
 
