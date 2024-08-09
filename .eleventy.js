@@ -174,6 +174,16 @@ module.exports = function (eleventyConfig) {
     return authorCollection.map(author => author.data.name);
   });
 
+  eleventyConfig.addCollection("randomizedPoems", function(collection) {
+    const postCollection = collection.getFilteredByTag("post");
+    return shuffleArray(postCollection);
+  });
+
+  eleventyConfig.addCollection("randomizedSwahiliPoems", function(collection) {
+    const shairi = collection.getFilteredByTag("swahili");
+    return shuffleArray(shairi);
+  });
+  
   // A collection composed of items that count as articles, i.e. whose content
   // can be used to generate previews when sharing their links on social media.
   eleventyConfig.addCollection("articles", function(collection) {

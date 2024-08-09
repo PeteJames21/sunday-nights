@@ -1,6 +1,6 @@
 ---
 title: Lawamu Za Sababu
-date: 2024-08-08
+date: "2024-08-08"
 author: JackSwaleh
 ---
 
