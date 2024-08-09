@@ -5,7 +5,11 @@
 
       {# SEO Links #}
       {% set url = "https://sundaynights.peterndungu.tech" %}
-      {% if title %}
+      {% if author %}
+        {% set pageTitle = "'" ~ title ~ "'" ~ " by " ~ author ~ " - Sunday Nights" %}
+      {% elif name %}
+        {% set pageTitle = name ~ " - Sunday Nights" %}
+      {% elif title %}
         {% set pageTitle = title ~ " - Sunday Nights" %}
       {% else %}
         {% set pageTitle = "Sunday Nights" %}
@@ -13,28 +17,26 @@
       <title>{{ pageTitle }}</title>
 
       {# Set the page description #}
-      {% if author %}
-        {% set desc = "'" ~ title ~ "'" ~ " by " ~ author %}
-      {% else %}
-        {% set desc = "Explore a diverse collection of poems tailored to suit every mood and occasion." %}
-      {% endif %}
+
+      {% set desc = "" %}
 
       {# Append content from article, if any #}
       {% for item in collections.articles %}
         {% if page.url === item.url %}
           {% set content = item.content | toPlainText %}
-          {% set desc = desc ~ ': '~ content %}
+          {% set desc = content %}
         {% endif %}
       {% endfor %}
 
       <meta name="description" content="{{ description | default(desc) }}">
 
       {% set image = image | getDefaultImage2 %}
+
       {# Facebook #}
       <meta property="og:title" content="{{ pageTitle }}">
       <meta property="og:url" content="{{ url ~ page.url }}">
-      <meta property="og:description" content="{{ desc }}">
-      <meta property="og:image" content="{{ url ~image  }}">
+      <meta property="og:description" content="{{  description | default(desc) }}">
+      <meta property="og:image" content="url ~image">
       <meta property="og:image:type" content="image/jpg">
       <meta property="og:image:width" content="540">
       <meta property="og:image:height" content="370">
