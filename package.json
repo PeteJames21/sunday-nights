@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "eleventy --serve",
-    "build": "npm install && eleventy"
+    "start": "rm -rf public && eleventy --serve",
+    "build": "npm install && rm -rf public && eleventy"
   },
   "keywords": [],
   "author": "",
