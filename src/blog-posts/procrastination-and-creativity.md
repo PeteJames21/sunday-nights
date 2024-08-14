@@ -1,7 +1,5 @@
 ---
 title: "Procrastination & Creativity"
-image: "https://picsum.photos/150"
-imageAlt: cover image
 date: "2024-08-05"
 author: Pete
 ---
