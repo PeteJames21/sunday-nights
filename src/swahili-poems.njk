@@ -8,7 +8,7 @@ pagination:
   size: 12
   alias: posts
   reverse: true
-permalink: "swahili-poems/"
+permalink: "{% if pagination.pageNumber > 0 %}swahili-poems/page-{{ pagination.pageNumber + 1 }}/index.html{% else %}swahili-poems/index.html{% endif %}"
 ---
 
 <h1 class="page-titles">
@@ -16,5 +16,4 @@ permalink: "swahili-poems/"
 </h1>
 {% set items = posts %}
 {% include "poem_card_grid.njk" %}
-
 {% include "pagination.njk" %}
