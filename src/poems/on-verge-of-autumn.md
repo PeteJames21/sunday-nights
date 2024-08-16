@@ -2,6 +2,8 @@
 title: On Verge Of Autumn
 date: "2024-07-21"
 author: Nosheen Irfan
+authorURL: "https://x.com/nosheen_qur"
+authorImage: "/assets/images/authors/nosheen.jpg"
 tags:
   - Change
 ---
