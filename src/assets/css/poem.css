@@ -5,6 +5,7 @@
   margin: 0 auto;
   box-sizing: border-box; /* Ensure padding is included in the width */
 }
+
 .poem-image {
   display: block;
   margin: 0 auto;
@@ -42,6 +43,10 @@
 
 .poem-text a {
   text-decoration: underline;
+}
+
+.poem-text pre {
+  font: inherit;
 }
 
 .random-recommendation {
