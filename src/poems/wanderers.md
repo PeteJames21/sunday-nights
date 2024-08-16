@@ -8,7 +8,7 @@ tags:
 ---
 
 You made that night my best,
-Under the shade of a leafless true,
+Under the shade of a leafless tree,
 We stood out among the rest,
 With sweet laughs of love,
 Lovingly we strolled abreast,

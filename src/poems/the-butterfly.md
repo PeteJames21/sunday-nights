@@ -14,7 +14,7 @@ The butterfly can transform it's world.
 And give way to new beginnings, unfurled,
 It is the keeper of transformation,
 And flies on faith and imagination.
-The butterfly as no fear of change,
+The butterfly has no fear of change,
 It bravely escapes it's homemade cage.
 To change, it knows is necessary,
 For all the burdens we need not carry.
