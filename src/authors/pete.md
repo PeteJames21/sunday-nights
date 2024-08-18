@@ -1,6 +1,6 @@
 ---
 name: "Pete"
-image: "/assets/images/authors/pete.jpg"
+image: "/assets/images/authors/_pete.jpg"
 ---
 
 “Beauty is truth, truth beauty”—that is all
