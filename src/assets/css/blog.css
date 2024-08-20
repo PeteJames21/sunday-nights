@@ -6,3 +6,8 @@
   letter-spacing: normal;
   color: #1a1a1a;
 }
+
+.blog-text a {
+
+  text-decoration: underline;
+}
