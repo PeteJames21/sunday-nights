@@ -6,12 +6,16 @@ author: Bencity
 
 In the vastness of time, words are the brushstrokes we use to leave our mark, and poetry is the canvas where the soul finds its voice. Take, for instance, this verse by [Emily Dickison](https://www.poetryfoundation.org/poems/52201/you-left-me-sire-two-legacies-713):
 
-  You left me Boundaries of Pain –
-  Capacious as the Sea –
-  Between Eternity and Time –
-  Your Consciousness – and me –
-                    	Emily Dickinson, “You left me – Sire – two Legacies”
+<p style="text-indent: 2em;">
+You left me Boundaries of Pain –<br>
+Capacious as the Sea –<br>
+Between Eternity and Time –<br>
+Your Consciousness – and me –
+</p>
 
+<p style="text-indent: 6em;">
+  Emily Dickinson, “You left me – Sire – two Legacies”
+</p>
 There is something eternally beautiful about the verse above. Or be it the repetitive yet relatable misery of Atieno from [A Freedom Song](https://paukwa.or.ke/a-freedom-song-atieno-yo/), or, the playful tragedy of [Mid-Term Break](https://www.poetryfoundation.org/poems/57041/mid-term-break), or the iconic  [Caged Bird](https://www.poetryfoundation.org/poems/48989/caged-bird), poems are a magical creation. I may not remember when I first read a poem but I remember when I fell in love with them. Since then, it has been an enthralling love affair. Love and poetry? Well, these are eternal friends much like pen and paper. And of love, I wrote this poem, [A Starry Night](https://sundaynights.blog/poems/starry-night/):
 
   Two things gladden me;
