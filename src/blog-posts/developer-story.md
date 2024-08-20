@@ -4,31 +4,27 @@ date: "2024-08-20"
 author: Bencity
 ---
 
-In the vastness of time, words are the brushstrokes we use to leave our mark, and poetry is the canvas where the soul finds its voice. Take, for instance, this verse by [Emily Dickison](https://www.poetryfoundation.org/poems/52201/you-left-me-sire-two-legacies-713):
+In the vastness of time, words are the brushstrokes we use to leave our mark, and poetry is the canvas where the soul finds its voice. Take, for instance, this verse by Emily Dickinson:
 
-<div style="padding-left: 2em;">
-  You left me Boundaries of Pain –<br>
-  Capacious as the Sea –<br>
-  Between Eternity and Time –<br>
-  Your Consciousness – and me –
-</div>
+<pre>
+    You left me Boundaries of Pain –
+    Capacious as the Sea –
+    Between Eternity and Time –
+    Your Consciousness – and me –
+        (Emily Dickinson, <em>“You left me – Sire – two Legacies”</em>)
+</pre>
 
-<p style="text-indent: 8em;">
-  Emily Dickinson, <em>“You left me – Sire – two Legacies”</em>
-</p>
 There is something eternally beautiful about the verse above. Or be it the repetitive yet relatable misery of Atieno from [A Freedom Song](https://paukwa.or.ke/a-freedom-song-atieno-yo/), or the playful tragedy of [Mid-Term Break](https://www.poetryfoundation.org/poems/57041/mid-term-break), or the iconic [Caged Bird](https://www.poetryfoundation.org/poems/48989/caged-bird), poems are a magical creation. I may not remember when I first read a poem, but I remember when I fell in love with them. Since then, it has been an enthralling love affair. Love and poetry? Well, these are eternal friends much like pen and paper. And of love, I wrote this poem, [A Starry Night](https://sundaynights.blog/poems/starry-night/).
 
-<div style="padding-left: 2em;">
-  Two things gladden me;<br>
-  The starry night above,<br>
-  And the fiery thrill<br>
-  Of a heart in love!<br>
-</div>
+<pre>
+    Two things gladden me;
+    The starry night above,
+    And the fiery thrill
+    Of a heart in love!
+        (Bencity, <em>“A Starry Night”</em>)
+</pre>
 
-<p style="text-indent: 8em;">
-  Bencity, <em>“A Starry Night”</em>
-</p>
-Poetry is an art, a way with words that rewards a special type of listening. I find poems fascinating in their capacity to say the unsaid, in a way, to mean so much in so few words. I have penned many a poem – and have enjoyed countless others and within them, I found many like-minded individuals. As I began, by chance, writing and posting poems on Sunday nights, I quickly realized these poems were not for me alone. Since then, I have sought to have a platform for the poems and an interface to interact and share my love for poetry.
+[Emily Dickinson](https://www.poetryfoundation.org/poems/52201/you-left-me-sire-two-legacies-713) Poetry is an art, a way with words that rewards a special type of listening. I find poems fascinating in their capacity to say the unsaid, in a way, to mean so much in so few words. I have penned many a poem – and have enjoyed countless others and within them, I found many like-minded individuals. As I began, by chance, writing and posting poems on Sunday nights, I quickly realized these poems were not for me alone. Since then, I have sought to have a platform for the poems and an interface to interact and share my love for poetry.
 
 As the idea germinated, it came to fruition when I partnered with my co-developer, Pete, to bring this website to life. As poetic aficionados, we both found the enthusiasm within us and set out to create the website. After several meetings exploring the technical requirements of the website we finally settled on a road map.
 

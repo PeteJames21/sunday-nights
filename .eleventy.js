@@ -65,6 +65,30 @@ module.exports = function (eleventyConfig) {
     return author.data.image;
   });
 
+  // Remove all HTML tags from text: "<p>hey</p>"" becomes "hey"
+  // source: https://stackoverflow.com/questions/295566/sanitize-rewrite-html-on-the-client-side/430240#430240
+  eleventyConfig.addFilter("removeHTMLTags", function(html) {
+    const tagBody = '(?:[^"\'>]|"[^"]*"|\'[^\']*\')*';
+    const tagOrComment = new RegExp(
+        '<(?:'
+        // Comment body.
+        + '!--(?:(?:-*[^->])*--+|-?)'
+        // Special "raw text" elements whose content should be elided.
+        + '|script\\b' + tagBody + '>[\\s\\S]*?</script\\s*'
+        + '|style\\b' + tagBody + '>[\\s\\S]*?</style\\s*'
+        // Regular name
+        + '|/?[a-z]'
+        + tagBody
+        + ')>',
+        'gi');
+    let oldHtml;
+    do {
+      oldHtml = html;
+      html = html.replace(tagOrComment, '');
+    } while (html !== oldHtml);
+    return html.replace(/</g, '&lt;');
+  });
+
   /**
    * Return a default random image from the random image directory
    * if the image has not been specified.
@@ -183,7 +207,7 @@ module.exports = function (eleventyConfig) {
     const shairi = collection.getFilteredByTag("swahili");
     return shuffleArray(shairi);
   });
-  
+
   // A collection composed of items that count as articles, i.e. whose content
   // can be used to generate previews when sharing their links on social media.
   eleventyConfig.addCollection("articles", function(collection) {

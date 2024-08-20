@@ -16,6 +16,11 @@ a {
   color: inherit;
 }
 
+pre {
+  white-space: pre-wrap;       /* Wrap the text */
+  word-wrap: break-word;       /* Break long words if necessary */
+  overflow-wrap: break-word;   /* Ensure word-breaking behavior is consistent */
+}
 /*
 -------------------------
 GLOBAL VARIABLES
