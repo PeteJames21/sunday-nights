@@ -5,6 +5,7 @@ author: Bencity
 tags:
   - Friendship
   - Love
+  - featured
 ---
 
 Ruby;

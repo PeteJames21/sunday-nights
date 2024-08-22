@@ -6,6 +6,7 @@ date: "2018-01-22"
 author: Pete
 tags:
   - Love
+  - featured
 ---
 
 A beauty most pristine that made the roses blush
