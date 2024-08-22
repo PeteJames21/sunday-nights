@@ -24,7 +24,7 @@ There is something eternally beautiful about the verse above. Or be it the repet
         (Bencity, <em>“A Starry Night”</em>)
 </pre>
 
-[Emily Dickinson](https://www.poetryfoundation.org/poems/52201/you-left-me-sire-two-legacies-713) Poetry is an art, a way with words that rewards a special type of listening. I find poems fascinating in their capacity to say the unsaid, in a way, to mean so much in so few words. I have penned many a poem – and have enjoyed countless others and within them, I found many like-minded individuals. As I began, by chance, writing and posting poems on Sunday nights, I quickly realized these poems were not for me alone. Since then, I have sought to have a platform for the poems and an interface to interact and share my love for poetry.
+Poetry is an art, a way with words that rewards a special type of listening. I find poems fascinating in their capacity to say the unsaid, in a way, to mean so much in so few words. I have penned many a poem – and have enjoyed countless others and within them, I found many like-minded individuals. As I began, by chance, writing and posting poems on Sunday nights, I quickly realized these poems were not for me alone. Since then, I have sought to have a platform for the poems and an interface to interact and share my love for poetry.
 
 As the idea germinated, it came to fruition when I partnered with my co-developer, Pete, to bring this website to life. As poetic aficionados, we both found the enthusiasm within us and set out to create the website. After several meetings exploring the technical requirements of the website we finally settled on a road map.
 
