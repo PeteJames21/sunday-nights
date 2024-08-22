@@ -6,7 +6,7 @@ authorURL: "https://en.wikipedia.org/wiki/Rudyard_Kipling"
 authorImage: "/assets/images/authors/kipling.jpeg"
 tags:
   - Courage
-  - featured
+
 ---
 
 If you can keep your head when all about you
