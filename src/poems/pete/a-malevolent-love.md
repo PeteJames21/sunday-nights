@@ -16,8 +16,8 @@ But you're like a tumor,
 that grows ever more
 the more I cut.
 
-But how can I keep you
-when you sting bitterly
-like a wasp
+But how can I keep you,
+when you sting—so bitterly—
+like a wasp,
 each time you land
-on my fragile heart?
+on my fragile heart?"
