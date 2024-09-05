@@ -20,4 +20,4 @@ But how can I keep you,
 when you sting—so bitterly—
 like a wasp,
 each time you land
-on my fragile heart?"
+on my fragile heart?
