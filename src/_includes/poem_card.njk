@@ -10,7 +10,7 @@
         <img src="{{ item.data.author | getAuthorImage(collections.author) }}" alt="" onerror="this.onerror=null; this.src='/assets/images/authors/default.jpg';" class="card-avatar" >
       {% endif %}
       <div class="mu">
-        <a href="#" class="card-title font-weight-bold">{{ item.data.title }}</a>
+        <a href="{{ item.url }}" class="card-title font-weight-bold">{{ item.data.title }}</a>
         <p class="card-poem-author">by {% include "author_url.njk" %}</p>
         <div class="card-poem-snippet">
           {{ item.templateContent | truncate(250) | safe }}
