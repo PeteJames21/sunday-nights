@@ -6,7 +6,6 @@ authorURL: "https://en.wikipedia.org/wiki/William_Carlos_Williams"
 authorImage: /assets/images/authors/William_Carlos_Williams.jpg
 tags:
   - Nature
-  - featured
 ---
 
 <pre>
