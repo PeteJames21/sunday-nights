@@ -6,6 +6,7 @@ authorURL: https://en.wikipedia.org/wiki/Shel_Silverstein
 authorImage: https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Portrait_of_Shel_Silverstein_in_c._1964_by_Jerry_Yulsman.jpg/330px-Portrait_of_Shel_Silverstein_in_c._1964_by_Jerry_Yulsman.jpg
 tags:
   - Life
+  - Peace
   - featured
 ---
 
