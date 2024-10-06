@@ -6,6 +6,8 @@ authorURL: "https://en.wikipedia.org/wiki/Walter_Raleigh"
 authorImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Sir_Walter_Ralegh_by_%27H%27_monogrammist.jpg/330px-Sir_Walter_Ralegh_by_%27H%27_monogrammist.jpg"
 tags:
  - Love
+ - Comedy
+ - Romance
 ---
 
 If all the world and love were young,

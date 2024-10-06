@@ -6,6 +6,7 @@ authorURL: https://en.wikipedia.org/wiki/Robert_Frost
 authorImage: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Robert_Frost_NYWTS_4.jpg/330px-Robert_Frost_NYWTS_4.jpg
 tags:
   - Regret
+  - Courage
   - Life
 ---
 

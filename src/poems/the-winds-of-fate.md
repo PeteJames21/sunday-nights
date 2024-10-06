@@ -6,6 +6,7 @@ authorURL: https://en.wikipedia.org/wiki/Ella_Wheeler_Wilcox
 authorImage: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Ella_W._Wilcox_LCCN2014709802_%28cropped%29.jpg/330px-Ella_W._Wilcox_LCCN2014709802_%28cropped%29.jpg
 tags:
   - Hope
+  - Courage
   - featured
 ---
 

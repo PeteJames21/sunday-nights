@@ -6,6 +6,7 @@ authorURL: "https://x.com/nosheen_qur"
 authorImage: "/assets/images/authors/nosheen.jpg"
 tags:
   - Change
+  - Nature
 ---
 
 Sultry heat

@@ -3,6 +3,7 @@ title: Cold
 date: "2024-08-06"
 author: Bencity
 tags:
+  - Pain
   - Life
 ---
 

@@ -6,6 +6,7 @@ authorURL: "https://en.wikipedia.org/wiki/Christopher_Marlowe"
 authorImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Christopher_Marlowe.jpg/330px-Christopher_Marlowe.jpg"
 tags:
  - Love
+ - Romance
 ---
 
 Come live with me, and be my love;

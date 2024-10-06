@@ -5,6 +5,7 @@ date: "2024-09-04"
 authorImage: https://upload.wikimedia.org/wikipedia/en/4/4e/Judith_Wright_%28Queensland_State_Archives%29.jpg
 authorURL: https://en.wikipedia.org/wiki/Judith_Wright
 tags:
+  - Change
   - Life
 ---
 
