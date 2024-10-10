@@ -8,7 +8,7 @@ tags:
   - Pain
 ---
 
-Your love took me
+Our love took us
 To high and heavenly places,
 And oh, my dear!
-How hard I fell.
+How hard we fell.
