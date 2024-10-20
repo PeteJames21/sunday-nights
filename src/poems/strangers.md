@@ -4,6 +4,7 @@ date: "2024-08-06"
 author: Bencity
 tags:
   - Life
+  - featured
 ---
 
 There are strangers out there
