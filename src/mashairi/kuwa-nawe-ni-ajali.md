@@ -15,6 +15,6 @@ Kuchiti nikaogopa, mi sikutaka lawama
 Tulivyokuwa ni bapa, kwako nishakata tama
 
 Nishaacha kubigija, acha niwe bahaluli
-Bahati yangu nango ja, atanipa tu Jalali
+Bahati yangu nangoja, atanipa tu Jalali
 Leo hii najichuja, yangu tena usijali
 Utapata wako koja, kuwa nawe ni ajali
