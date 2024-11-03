@@ -1,5 +1,5 @@
 ---
-title: Better MAn
+title: Better Man
 date: "2024-11-03"
 author: Bencity
 tags:
