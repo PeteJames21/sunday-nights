@@ -3,6 +3,7 @@ title: Mender
 date: "2024-08-06"
 author: Bencity
 tags:
+  - Comedy
   - Life
 ---
 

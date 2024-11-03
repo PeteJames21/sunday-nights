@@ -44,9 +44,9 @@ main {
   /* max-height: calc(100vh - var(--header-height)); */
   overflow: auto;
   margin-top: var(--header-height);
-  height: 100%;
+  margin-bottom: 10px;
+  min-height: 80%;
   width: 100%;
-
 }
 
 
@@ -153,6 +153,7 @@ nav {
   .hamburger {
       display: flex;
   }
+
 }
 
 .footer-links {
@@ -175,6 +176,7 @@ footer {
   background: linear-gradient(180deg, #ffffff, #f0f0f0);
   color: #000;
   margin-top: auto;
+  height: fit-content;
 }
 
 

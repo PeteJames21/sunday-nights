@@ -18,7 +18,7 @@
 
       {# Set the page description #}
 
-      {% set desc = "" %}
+      {% set desc = "Explore a diverse collection of poems tailored to suit every mood and occasion." %}
 
       {# Append content from article, if any #}
       {% for item in collections.articles %}
@@ -28,14 +28,14 @@
         {% endif %}
       {% endfor %}
 
-      <meta name="description" content="{{ description | default(desc) }}">
+      <meta name="description" content="{{ description | default(desc) | truncate(160) }}">
 
       {% set image = image | getDefaultImage2 %}
 
       {# Facebook #}
       <meta property="og:title" content="{{ pageTitle }}">
       <meta property="og:url" content="{{ url ~ page.url }}">
-      <meta property="og:description" content="{{  description | default(desc) }}">
+      <meta property="og:description" content="{{  description | default(desc) | truncate(160) }}">
       <meta property="og:image" content="{{ url ~ image }}">
       <meta property="og:type" content="website">
       <meta property="og:image:type" content="image/jpg">
@@ -45,7 +45,7 @@
       {# Twitter #}
       <meta name="twitter:card" content="summary_large_image">
       <meta name="twitter:title" content="{{ pageTitle }}">
-      <meta name="twitter:description" content="{{ description | default(desc) }}">
+      <meta name="twitter:description" content="{{ description | default(desc) | truncate(160) }}">
       <meta name="twitter:image" content="{{ url ~image }}">
 
       <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -73,8 +73,8 @@
     {% include "header.njk" %}
     <main>
       {{ content | safe }}
-      {% include "footer.njk" %}
     </main>
+    {% include "footer.njk" %}
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

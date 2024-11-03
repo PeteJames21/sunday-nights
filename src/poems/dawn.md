@@ -1,11 +1,11 @@
 ---
 title: Dawn
 author: William Carlos Williams
+date: "2024-08-01"
 authorURL: "https://en.wikipedia.org/wiki/William_Carlos_Williams"
 authorImage: /assets/images/authors/William_Carlos_Williams.jpg
 tags:
   - Nature
-  - featured
 ---
 
 <pre>

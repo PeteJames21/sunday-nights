@@ -1,0 +1,18 @@
+{
+	"Add poem/blog front matter metadata": {
+		"prefix": "---",
+		"body": [
+			"---",
+			"title: $1",
+			"date: \"$2\"",
+			"author: $3",
+			"authorURL: $4",
+			"authorImage: $5",
+			"tags: $6",
+			"---",
+			"",
+			"$7"
+		],
+		"description": "Add poem/blog front matter metadata"
+	}
+}
