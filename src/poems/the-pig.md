@@ -9,7 +9,7 @@ tags:
 ---
 
 In England once there lived a big
-A wonderfully clever pig.
+And wonderfully clever pig.
 To everybody it was plain
 That Piggy had a massive brain.
 He worked out sums inside his head,
