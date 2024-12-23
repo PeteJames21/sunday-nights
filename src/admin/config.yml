@@ -1,0 +1,81 @@
+media_folder: "src/assets/images/uploads"
+public_folder: "/assets/images/uploads"
+
+# Uncomment this line once the local backend is disabled and the non-local backend is active
+# publish_mode: editorial_workflow
+
+
+local_backend:
+  url: http://localhost:8081/api/v1
+
+# TODO: configure Netlify identity to enable autocommit and push: https://decapcms.org/docs/github-backend/
+backend:
+  name: git-gateway
+  branch: main
+  commit_messages:
+    create: Create {{collection}} “{{slug}}”
+    update: Update {{collection}} “{{slug}}”
+    delete: Delete {{collection}} “{{slug}}”
+    uploadMedia: Upload “{{path}}”
+    deleteMedia: Delete “{{path}}”
+    openAuthoring: '{{message}}'
+
+
+collections:
+  - name: "poems"
+    label: "Poems"
+    label_singular: "Poem"
+    folder: "src/poems"
+    create: true
+    fields:
+      - { label: "Title", name: "title" , widget: "string" }
+      - { label: "Author Name", name: "author", widget: "string" }
+      - { label: "Cover Image", name: "image", widget: "image", required: false }
+      - { label: "Date", name: "date", widget: "string", required: false }
+      - { label: "URL to bio of author", name: "authorURL", widget: "string", required: false, hint: "Only use for authors not in the Authors collection"}
+      - { label: "Author Image", name: "authorImage", widget: "image", required: false, hint: "Only use for authors not in the Authors collection" }
+      - { label: "Tags (Comma-separated list)", name: "tags", widget: "list", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "shairi"
+    label: "Shairi"
+    folder: "src/mashairi"
+    create: true
+    fields:
+      - { label: "Title", name: "title" , widget: "string" }
+      - { label: "Author Name", name: "author", widget: "string" }
+      - { label: "Cover Image", name: "image", widget: "image", required: false }
+      - { label: "Date", name: "date", widget: "string", required: false }
+      - { label: "URL to bio of author", name: "authorURL", widget: "string", required: false, hint: "Only use for authors not in the Authors collection" }
+      - { label: "Author Image", name: "authorImage", widget: "image", required: false, hint: "Only use for authors not in the Authors collection" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "blogs"
+    label: "Blog Articles"
+    label_singular: "Blog Article"
+    folder: "src/blog-posts"
+    create: true
+    fields:
+      - { label: "Title", name: "title" , widget: "string" }
+      - { label: "Author Name", name: "author", widget: "string" }
+      - { label: "Cover Image", name: "image", widget: "image", required: false }
+      - { label: "Date", name: "date", widget: "string", required: false }
+      - { label: "URL to bio of author", name: "authorURL", widget: "string", required: false, hint: "Only use for authors not in the Authors collection" }
+      - { label: "Author Image", name: "authorImage", widget: "image", required: false, hint: "Only use for authors not in the Authors collection" }
+      - { label: "Tags (Comma-separated list)", name: "tags", widget: "list", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "authors"
+    label: "Authors"
+    label_singular: "Author"
+    slug: "{{name}}"
+    folder: "src/authors"
+    create: true
+    fields:
+      - label: "Name"
+        name: "name"
+        widget: "string"
+      - label: "Avatar"
+        name: "image"
+        widget: "image"
+        required: false
+      - label: "Bio"
+        name: "body"
+        widget: "markdown"

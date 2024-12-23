@@ -51,6 +51,8 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy("./src/assets");
   eleventyConfig.addWatchTarget("./src/assets/");
+  eleventyConfig.addWatchTarget("./src/admin/");
+  eleventyConfig.addPassthroughCopy("./src/admin/");
   eleventyConfig.setLibrary("md", markdownIt(markdownItOptions));
 
   eleventyConfig.addFilter("filterByAuthor", function(posts, authorName) {
