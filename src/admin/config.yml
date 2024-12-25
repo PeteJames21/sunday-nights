@@ -2,11 +2,8 @@ media_folder: "src/assets/images/uploads"
 public_folder: "/assets/images/uploads"
 
 # Uncomment this line once the local backend is disabled and the non-local backend is active
-# publish_mode: editorial_workflow
+publish_mode: editorial_workflow
 
-
-local_backend:
-  url: http://localhost:8081/api/v1
 
 # TODO: configure Netlify identity to enable autocommit and push: https://decapcms.org/docs/github-backend/
 backend:
