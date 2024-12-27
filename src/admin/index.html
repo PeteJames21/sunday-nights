@@ -6,6 +6,9 @@
     <meta name="robots" content="noindex" />
     <title>Content Manager</title>
     <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script type="text/javascript">
+        netlifyIdentity.on('logout', user => window.location.href="/");
+     </script>
   </head>
   <body>
     <!-- Include the script that builds the page and powers Decap CMS -->
