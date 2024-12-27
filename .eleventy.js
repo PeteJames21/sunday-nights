@@ -3,6 +3,7 @@ const lodashChunk = require('lodash.chunk');
 const { htmlToText } = require('html-to-text');
 const fs = require('fs');
 const path = require('path');
+const dayjs = require("dayjs");
 
 /**
  * This array contains special tags that reference names of collections. It is used
@@ -54,6 +55,26 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget("./src/admin/");
   eleventyConfig.addPassthroughCopy("./src/admin/");
   eleventyConfig.setLibrary("md", markdownIt(markdownItOptions));
+
+  eleventyConfig.addFilter("formatDate", (date) => {
+    // Check if the date is in "YYYY-MM-DD" format
+    if (/^\d{4}-\d{2}-\d{2}$/.test(date)) {
+      return dayjs(date, "YYYY-MM-DD").format("MMMM D, YYYY"); // Example: "December 25, 2024"
+    }
+    // Check if the date is in "YYYY" format
+    else if (/^\d{4}$/.test(date)) {
+      return dayjs(date, "YYYY").format("YYYY"); // Format as "YYYY"
+    }
+    // Check if the date is in "YYYY-MM" format
+    else if (/^\d{4}-\d{2}$/.test(date)) {
+      return dayjs(date, "YYYY-MM").format("MMMM YYYY"); // Example: "December 2024"
+    }
+
+    // Default fallback (if date is invalid or in another format)
+    else {
+      return date;
+    }
+  });
 
   eleventyConfig.addFilter("filterByAuthor", function(posts, authorName) {
     return posts.filter(item => item.data.author === authorName);

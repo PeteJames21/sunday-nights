@@ -54,7 +54,7 @@ collections:
       - { label: "Title", name: "title" , widget: "string" }
       - { label: "Author Name", name: "author", widget: "string" }
       - { label: "Cover Image", name: "image", widget: "image", required: false }
-      - { label: "Date", name: "date", widget: "string", required: false }
+      - { label: "Date", name: "date", widget: "string", required: false, hint: "Date format: YYYY-MM-DD, YYYY-MM, or YYYY"}
       - { label: "URL to bio of author", name: "authorURL", widget: "string", required: false, hint: "Only use for authors not in the Authors collection" }
       - { label: "Author Image", name: "authorImage", widget: "image", required: false, hint: "Only use for authors not in the Authors collection" }
       - { label: "Tags (Comma-separated list)", name: "tags", widget: "list", required: false }

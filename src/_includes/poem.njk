@@ -6,7 +6,7 @@ layout: base.njk
   {# <img class="poem-image" src="{{ image }}" alt="poem cover image"> #}
   <h1 class="poem-title">{{ title }}</h1>
   <p class="poem-data">
-    by {% include "author_url.njk" %}{% if date %}, {{ date }}{% endif  %}
+    by {% include "author_url.njk" %}{% if date %}, {{ date | formatDate }}{% endif  %}
   </p>
   <article class="poem-text">{{ content | safe}}</article>
 
