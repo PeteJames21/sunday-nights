@@ -1,5 +1,5 @@
 ---
-title: A Wonderful Bird Is The Pelican
+title: A Wonderful Bird is the Pelican
 author: "Dixon Lanier Merritt "
 date: "1910"
 authorURL: https://en.wikipedia.org/wiki/Dixon_Lanier_Merritt
