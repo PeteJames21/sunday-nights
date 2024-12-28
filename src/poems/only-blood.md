@@ -1,7 +1,7 @@
 ---
 title: Only Blood
 author: Pete
-date: 2024-10-20
+date: "2024-10-20"
 tags:
   - Christianity
 ---
