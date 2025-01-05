@@ -72,7 +72,17 @@ module.exports = function (eleventyConfig) {
 
     // Default fallback (if date is invalid or in another format)
     else {
-      return date;
+      const dt = new Date(date);
+      try {
+        if (!isNaN(dt)) {
+          return dayjs(date, "YYYY-MM-DD").format("MMMM D, YYYY");
+        } else {
+          return date;
+        }
+      }
+      catch (err) {
+        return "n.d.";
+      }
     }
   });
 
