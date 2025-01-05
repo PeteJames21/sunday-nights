@@ -81,7 +81,7 @@ module.exports = function (eleventyConfig) {
         }
       }
       catch (err) {
-        return "n.d.";
+        return date;
       }
     }
   });
