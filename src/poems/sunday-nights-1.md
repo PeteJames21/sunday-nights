@@ -1,5 +1,5 @@
 ---
-title: Sunday Nights
+title: Vivid Dream
 author: Ryan NKP
 date: 2024-12-28
 tags:
