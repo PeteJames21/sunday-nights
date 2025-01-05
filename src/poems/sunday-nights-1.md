@@ -3,7 +3,7 @@ title: Vivid Dream
 author: Ryan NKP
 date: 2024-12-28
 tags:
-  - Sunday
+  - Dream
 ---
 Where whispers hum in soft delight,\
 Fine nights bloom, a tranquil sight,\
@@ -17,5 +17,5 @@ Life unfolds in a vivid dream.
 
 Let the rhythm of hope entwine,\
 Through every heart, a steady climb.\
-Sunday nights, where spirits rise,\
+Tranquil nights, where spirits rise,\
 A hymn of courage under endless skies.
