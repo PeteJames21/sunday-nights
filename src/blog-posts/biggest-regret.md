@@ -1,5 +1,5 @@
 ---
-title: Biggest Regret
+title: A More Authentic Me
 author: Pete
 date: 2024-11-01
 authorURL: ""
