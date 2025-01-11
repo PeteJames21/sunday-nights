@@ -3,6 +3,9 @@ title: Frozen in Time
 author: Ryan NKP
 image: /assets/images/uploads/musee.webp
 date: 2025-01-07
+tags:
+  - Meditation
+  - History
 ---
 He wanders slowly,
 hands in his pockets,
