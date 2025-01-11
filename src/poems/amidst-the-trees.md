@@ -13,7 +13,7 @@ but he's calm, rooted,\
 like he belongs here.
 
 Maybe he's thinking,\
-maybe just breathing\
+maybe just breathing,\
 but in this moment,\
 he's part of the trees,\
 and they, a part of him.
