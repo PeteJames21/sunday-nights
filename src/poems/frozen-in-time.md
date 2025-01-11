@@ -1,6 +1,7 @@
 ---
 title: Frozen in Time
 author: Ryan NKP
+image: /assets/images/uploads/musee.webp
 date: 2025-01-07
 ---
 He wanders slowly,
