@@ -1,7 +1,7 @@
 ---
-title: I've A Pain In My Head
-date: "1811"
+title: I've a Pain in My Head
 author: Jane Austen
+date: "1811"
 authorURL: https://en.wikipedia.org/wiki/Jane_Austen
 authorImage: https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/CassandraAusten-JaneAusten%28c.1810%29_hires.jpg/300px-CassandraAusten-JaneAusten%28c.1810%29_hires.jpg
 tags:
