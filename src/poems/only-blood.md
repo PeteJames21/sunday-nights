@@ -1,9 +1,10 @@
 ---
 title: Only Blood
 author: Pete
-date: "2024-10-20"
+date: 2024-10-20
 tags:
   - Christianity
+  - Religion
 ---
 Only blood could wash away sin,
 And so we put on altars, the blood of beasts.
