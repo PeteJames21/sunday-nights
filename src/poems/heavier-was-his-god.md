@@ -1,7 +1,7 @@
 ---
 title: Heavier Was His God
 author: Ryan NKP
-date: 2024-01-13
+date: 2025-01-13
 tags:
   - Religion
   - Pain
