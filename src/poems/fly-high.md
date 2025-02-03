@@ -2,7 +2,9 @@
 title: Fly High
 author: Ryan NKP
 date: 2025-02-03
-tags: []
+tags:
+  - Freedom
+  - Peace
 ---
 Free as a bird, no chains, no ties,
 Drifting through endless, open skies.
