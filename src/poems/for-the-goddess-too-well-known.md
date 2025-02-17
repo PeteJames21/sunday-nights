@@ -1,8 +1,9 @@
 ---
 title: For the Goddess Too Well Known
 author: Elsa Gidlow
-image: https://upload.wikimedia.org/wikipedia/en/2/26/Elsa_Gidlow_1974_by_Lynda_Koolish.jpg
+image: ""
 authorURL: https://en.wikipedia.org/wiki/Elsa_Gidlow
+authorImage: https://upload.wikimedia.org/wikipedia/en/2/26/Elsa_Gidlow_1974_by_Lynda_Koolish.jpg
 tags:
   - Love
   - Romance
