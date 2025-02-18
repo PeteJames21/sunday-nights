@@ -1,5 +1,5 @@
 {
-  "name": "blog2",
+  "name": "sunday-nights",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "A static website for poems and blogs",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
     "decap-server": "^3.1.2",
