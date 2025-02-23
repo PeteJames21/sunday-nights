@@ -6,10 +6,11 @@ tags:
   - Pain
   - Sorrow
 ---
+<pre>
 Feelings 
 I can't express 
 My world feels oppressed 
-     Feelings 
+    Feelings 
 My chest is compressed 
 I feel depressed 
    Feelings
@@ -21,3 +22,4 @@ Hide them inside
      Feelings
 To always curl up
 Can't act up
+</pre>
