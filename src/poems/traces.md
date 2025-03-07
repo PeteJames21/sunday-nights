@@ -1,8 +1,9 @@
 ---
 title: Traces
 author: Pete
+image: /assets/images/uploads/mosaic.webp
 date: 2025-03-06
-authorImage: /assets/images/uploads/mosaic.webp
+authorImage: ""
 tags:
   - Life
   - Change
