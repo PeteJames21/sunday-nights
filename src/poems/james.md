@@ -1,7 +1,7 @@
 ---
 title: James
 author: Ryan NKP
-image: /assets/images/uploads/james.webp
+image: /assets/images/uploads/james-cover.webp
 date: 2025-03-22
 tags:
   - Courage
