@@ -3,6 +3,10 @@ title: Home at Last
 author: Pete
 image: /assets/images/uploads/night-cropped.webp
 date: 2025-04-19
+tags:
+  - Night
+  - Home
+  - ""
 ---
 To my sanctuary I return— 
 A tranquil night.
