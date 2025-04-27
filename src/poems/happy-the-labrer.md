@@ -1,5 +1,5 @@
 ---
-title: Happy The Lab'Rer
+title: Happy The Lab'rer
 author: Jane Austen
 date: ""
 authorURL: https://en.wikipedia.org/wiki/Jane_Austen
