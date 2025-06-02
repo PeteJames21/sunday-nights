@@ -45,7 +45,7 @@ If silence swallows my name,
 bless it.
 
 For in that hush,
-return-
+I return-
 again,
 and again,
 and again.
