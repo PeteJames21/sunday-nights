@@ -2,6 +2,9 @@
 title: Red
 author: Bellie
 date: 2025-08-07
+tags:
+  - Pain
+  - Sorrow
 ---
 I love red,
 not in the way most do,
