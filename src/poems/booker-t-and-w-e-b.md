@@ -6,6 +6,7 @@ authorURL: https://en.wikipedia.org/wiki/Dudley_Randall
 authorImage: https://upload.wikimedia.org/wikipedia/en/8/83/Dudley_Randall.png
 tags:
   - Politics
+  - Featured
 ---
 “It seems to me,” said Booker T.,
 “It shows a mighty lot of cheek
