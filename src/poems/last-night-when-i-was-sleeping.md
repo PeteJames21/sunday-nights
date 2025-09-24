@@ -1,11 +1,12 @@
 ---
 title: Last Night as I Was Sleeping
-date: "2024-09-01"
 author: Antonio Machado
+date: 2024-09-01
 authorURL: https://en.wikipedia.org/wiki/Antonio_Machado
 authorImage: https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/AntonioMachado.JPG/330px-AntonioMachado.JPG
 tags:
-  - Life
+  - Dream
+  - Meditation
 ---
 
 Last night as I was sleeping,
