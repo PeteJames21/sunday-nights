@@ -33,9 +33,9 @@ Company with honesty
 is virtue – vices to flee.
 Company is good and ill,
 But every man hath his free will.
-The best ensue.
-The worst eschew.
+The best ensue,
+the worst eschew.
 My mind shall be;
-Virtue to use.
-Vice to refuse.
+virtue to use,
+vice to refuse,
 Thus I use me!
