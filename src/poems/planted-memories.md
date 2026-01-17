@@ -14,5 +14,5 @@ some bloom softly,
 some rise like weeds
 I wish I never watered.
 But all of them remind me
-that the past doesn’t stay dead
+that the past doesn’t stay dead—
 it learns to breathe underground.
