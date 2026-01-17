@@ -1,5 +1,5 @@
 ---
-title: Hearts
+title: The Shape of Healing
 author: Ryan NKP
 date: 2025-11-24
 ---
@@ -14,7 +14,7 @@ I grew wings made of the hurt.
 Healing wasn’t straight,
 but it took me higher
 to places I never saw.
-But it hit me like a raw, 
+But it hit me like a roar, 
 drove me away from where I was,
-for I am afraid of the worst 
+for I am afraid of the worst— 
 But the worst is now nursed.
