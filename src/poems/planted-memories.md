@@ -1,7 +1,7 @@
 ---
 title: Planted Memories
 author: Ryan NKP
-date: 2025-01-15
+date: 2026-01-15
 tags:
   - Life
 ---
