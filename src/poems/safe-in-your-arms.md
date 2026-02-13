@@ -4,6 +4,7 @@ author: Lihanda
 date: 2026-02-13
 tags:
   - Love
+  - Romance
 ---
 Safe in your arms,
 your heartbeat feels like a melody—
