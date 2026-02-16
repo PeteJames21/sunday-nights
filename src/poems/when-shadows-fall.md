@@ -3,6 +3,8 @@ title: When Shadows Fall
 author: Stay-See
 date: 2025-12-05
 authorURL: ""
+tags:
+  - Religion
 ---
 When dark shadows fall around me
 When the day turns into night
