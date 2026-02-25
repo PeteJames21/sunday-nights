@@ -4,6 +4,7 @@ author: Stay-See
 date: 2025-07-25
 tags:
   - Religion
+  - Christianity
 ---
 Though the road be rough and stormy,
 trackless as the foaming see,
