@@ -1,6 +1,6 @@
 ---
 title: What About Me
-author: Zoya Snower
+author: Zoya Snawer
 date: 2026-09-23
 ---
 Everyone wants something, and they get it .
